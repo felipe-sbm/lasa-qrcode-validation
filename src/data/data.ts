@@ -20,6 +20,8 @@ export interface Evento {
   imagens: string[];
   autoresIds: string[];
   categoria: string;
+  formularioUrl?: string;
+  formularioAtivo?: boolean;
 }
 
 export interface Referencia {
@@ -30,6 +32,15 @@ export interface Referencia {
   tipo: 'artigo' | 'livro' | 'site' | 'relatorio';
   link?: string;
   descricao?: string;
+}
+
+export interface Patrocinador {
+  id: string;
+  nome: string;
+  logo: string;
+  descricao: string;
+  website?: string;
+  categoria: 'Ouro' | 'Prata' | 'Bronze' | 'Apoio';
 }
 
 // Dados dos Participantes
@@ -95,7 +106,7 @@ export const eventos: Evento[] = [
   {
     id: "1",
     titulo: "A Década dos Oceanos: Desafios e Oportunidades",
-    descricao: "Palestra inaugural sobre a Década das Nações Unidas da Ciência Oceânica para o Desenvolvimento Sustentável (2021-2030).",
+    descricao: "Palestra sobre a Década das Nações Unidas da Ciência Oceânica para o Desenvolvimento Sustentável (2021-2030).",
     descricaoCompleta: `
       <p>A Década dos Oceanos é uma iniciativa global da ONU que visa mobilizar a comunidade científica, governos, setor privado e sociedade civil para reverter o ciclo de declínio da saúde dos oceanos e criar melhores condições para o desenvolvimento sustentável.</p>
       
@@ -123,7 +134,9 @@ export const eventos: Evento[] = [
       "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&h=600&fit=crop"
     ],
     autoresIds: ["1", "3", "5"],
-    categoria: "Palestra"
+    categoria: "Palestra",
+    formularioUrl: "https://forms.google.com/exemplo-decada-oceanos",
+    formularioAtivo: false
   },
   {
     id: "2",
@@ -163,7 +176,9 @@ export const eventos: Evento[] = [
       "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&h=600&fit=crop"
     ],
     autoresIds: ["2", "1", "6"],
-    categoria: "Workshop"
+    categoria: "Workshop",
+    formularioUrl: "https://forms.google.com/exemplo-biodiversidade",
+    formularioAtivo: false
   },
   {
     id: "3",
@@ -232,7 +247,9 @@ export const eventos: Evento[] = [
       "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
     ],
     autoresIds: ["3", "4", "1"],
-    categoria: "Mesa Redonda"
+    categoria: "Mesa Redonda",
+    formularioUrl: "https://forms.google.com/exemplo-mudancas-climaticas",
+    formularioAtivo: false
   }
 ];
 
@@ -342,6 +359,74 @@ export const referencias: Referencia[] = [
   }
 ];
 
+// Dados dos Patrocinadores
+export const patrocinadores: Patrocinador[] = [
+  {
+    id: "1",
+    nome: "UFRN - Universidade Federal do Rio Grande do Norte",
+    logo: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=400&fit=crop",
+    descricao: "Principal instituição de ensino superior do estado, apoiando pesquisa e extensão em ciências marinhas.",
+    website: "https://ufrn.br",
+    categoria: "Ouro"
+  },
+  {
+    id: "2",
+    nome: "CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+    logo: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=400&fit=crop",
+    descricao: "Agência de fomento à pesquisa científica e tecnológica no Brasil.",
+    website: "https://cnpq.br",
+    categoria: "Ouro"
+  },
+  {
+    id: "3",
+    nome: "CAPES - Coordenação de Aperfeiçoamento de Pessoal de Nível Superior",
+    logo: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=400&fit=crop",
+    descricao: "Fundação do Ministério da Educação que atua na expansão e consolidação da pós-graduação stricto sensu.",
+    website: "https://capes.gov.br",
+    categoria: "Prata"
+  },
+  {
+    id: "4",
+    nome: "Petrobras",
+    logo: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=400&fit=crop",
+    descricao: "Empresa brasileira de energia com projetos de pesquisa em oceanografia e meio ambiente.",
+    website: "https://petrobras.com.br",
+    categoria: "Prata"
+  },
+  {
+    id: "5",
+    nome: "Instituto Chico Mendes de Conservação da Biodiversidade",
+    logo: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop",
+    descricao: "Órgão ambiental responsável pela conservação da biodiversidade marinha brasileira.",
+    website: "https://icmbio.gov.br",
+    categoria: "Bronze"
+  },
+  {
+    id: "6",
+    nome: "Projeto TAMAR",
+    logo: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop",
+    descricao: "Programa brasileiro de conservação de tartarugas marinhas, reconhecido internacionalmente.",
+    website: "https://tamar.org.br",
+    categoria: "Bronze"
+  },
+  {
+    id: "7",
+    nome: "Fundação Grupo Boticário",
+    logo: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=400&fit=crop",
+    descricao: "Organização que apoia projetos de conservação da natureza em todo o Brasil.",
+    website: "https://fundacaogrupoboticario.org.br",
+    categoria: "Apoio"
+  },
+  {
+    id: "8",
+    nome: "Oceana Brasil",
+    logo: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop",
+    descricao: "ONG internacional dedicada à proteção e restauração dos oceanos do mundo.",
+    website: "https://oceana.org.br",
+    categoria: "Apoio"
+  }
+];
+
 // Funções auxiliares
 export function getEventoById(id: string): Evento | undefined {
   return eventos.find(evento => evento.id === id);
@@ -357,4 +442,8 @@ export function getParticipantesByIds(ids: string[]): Participante[] {
 
 export function getEventosByCategoria(categoria: string): Evento[] {
   return eventos.filter(evento => evento.categoria === categoria);
+}
+
+export function getPatrocinadoresByCategoria(categoria: string): Patrocinador[] {
+  return patrocinadores.filter(patrocinador => patrocinador.categoria === categoria);
 }

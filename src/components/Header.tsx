@@ -25,19 +25,19 @@ export default function Header() {
           >
             <div className="relative">
               <Image
-                src={"/logo.webp"}
+                src={"/lasa-white.png"}
                 width={60}
                 height={60}
-                alt="Logo Oficial da Década dos Oceanos do Rio Grande do Norte"
-                className="rounded-full shadow-lg"
+                alt="Logo LASA - Liga Acadêmica de Sistemas Aquáticos"
+                className="shadow-lg"
               />
             </div>
             <div>
               <h1 className="text-2xl font-extrabold text-white tracking-tight leading-tight">
-                Década dos Oceanos
+                Semana de Ciência e Tecnologia
               </h1>
               <p className="text-xs text-cyan-200 font-medium">
-                2021-2030 • UFRN
+                Laboratório de Soluções Ambientais • UFRN
               </p>
             </div>
           </Link>
@@ -95,17 +95,17 @@ export default function Header() {
 
               <li>
                 <Link 
-                  href="/referencias" 
+                  href="/patrocinadores" 
                   className={`
                     block px-6 py-3 rounded-lg font-semibold text-sm
                     transition-all duration-200 no-underline
-                    ${isActive("/referencias") 
+                    ${isActive("/patrocinadores") 
                       ? "bg-white text-blue-900 shadow-lg" 
                       : "text-white hover:bg-white/20 hover:shadow-md"
                     }
                   `}
                 >
-                  Referências
+                  Patrocinadores
                 </Link>
               </li>
             </ul>

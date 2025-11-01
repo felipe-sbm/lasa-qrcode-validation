@@ -12,7 +12,7 @@ export default function EventosPage() {
             Eventos da Semana
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Participe dos eventos sobre a Década dos Oceanos durante a Semana de Ciência e Tecnologia da UFRN
+            Explore os diversos eventos da Semana de Ciência e Tecnologia organizada pela LASA
           </p>
         </div>
 

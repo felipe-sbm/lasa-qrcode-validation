@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getEventoById, getParticipantesByIds } from "@/data/data";
 
-export default function EventoPage({ params }: { params: { id: string } }) {
-  const evento = getEventoById(params.id);
+export default async function EventoPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const evento = getEventoById(id);
 
   if (!evento) {
     notFound();
@@ -153,7 +154,22 @@ export default function EventoPage({ params }: { params: { id: string } }) {
               </div>
 
               {/* CTA */}
-              <div className="mt-8 pt-8 border-t border-gray-200">
+              <div className="mt-8 pt-8 border-t border-gray-200 space-y-4">
+                {evento.formularioUrl && evento.formularioAtivo && (
+                  <a
+                    href={evento.formularioUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors bg-green-600 text-white hover:bg-green-700"
+                  >
+                    Inscreva-se Agora
+                  </a>
+                )}
+                {evento.formularioUrl && !evento.formularioAtivo && (
+                  <div className="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-gray-300 text-gray-500 cursor-not-allowed">
+                    Inscrições em Breve
+                  </div>
+                )}
                 <Link
                   href="/participantes"
                   className="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

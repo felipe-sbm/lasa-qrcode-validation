@@ -14,18 +14,15 @@ export default function Home() {
             <div className="space-y-6">
               <div>
                 <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">
-                  Década dos Oceanos
+                  Semana de Ciência e Tecnologia 2025
                 </h1>
-                <p className="text-2xl text-blue-600 mb-2">2021-2030</p>
-                <p className="text-xl text-gray-700">
-                  Semana de Ciência e Tecnologia - UFRN
-                </p>
+                <p className="text-2xl text-blue-600 mb-2">Laboratório de Soluções Ambientais • UFRN</p>
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                A <strong>Década das Nações Unidas da Ciência Oceânica para o Desenvolvimento Sustentável</strong> 
-                {" "}(2021-2030) é uma iniciativa global para reverter o ciclo de declínio da saúde dos oceanos 
-                e criar melhores condições para o desenvolvimento sustentável através da ciência oceânica e do conhecimento.
+                Bem-vindo à <strong>Semana de Ciência e Tecnologia</strong> organizada pela LASA! 
+                {" "}Explore diversos eventos sobre temas atuais e relevantes para a ciência e tecnologia, 
+                incluindo a Década dos Oceanos, biodiversidade marinha, mudanças climáticas e muito mais.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -49,27 +46,21 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Objetivos Section */}
+        {/* Sobre a LASA Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">
-            Os Sete Resultados da Década dos Oceanos
+            Sobre a LASA
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { titulo: "Oceano Limpo", descricao: "Identificar e reduzir fontes de poluição" },
-              { titulo: "Oceano Saudável", descricao: "Proteger e restaurar ecossistemas marinhos" },
-              { titulo: "Oceano Produtivo", descricao: "Sustentar abastecimento de alimentos" },
-              { titulo: "Oceano Previsto", descricao: "Compreender mudanças nas condições oceânicas" },
-              { titulo: "Oceano Seguro", descricao: "Proteger vidas de perigos relacionados ao oceano" },
-              { titulo: "Oceano Acessível", descricao: "Acesso aberto a dados e tecnologia" },
-              { titulo: "Oceano Inspirador", descricao: "Sociedade que valoriza o oceano" }
-            ].map((objetivo, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-600">
-                <h3 className="text-xl font-semibold text-blue-900 mb-2">{objetivo.titulo}</h3>
-                <p className="text-gray-600">{objetivo.descricao}</p>
-              </div>
-            ))}
+          <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              A <strong>Liga Acadêmica de Sistemas Aquáticos (LASA)</strong> é uma organização estudantil da UFRN 
+              dedicada à pesquisa, educação e extensão nas áreas de oceanografia, ecologia aquática e ciências ambientais.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Nossa missão é promover o conhecimento científico e a consciência ambiental através de eventos, 
+              palestras, workshops e atividades práticas que conectam estudantes, pesquisadores e a comunidade.
+            </p>
           </div>
         </section>
 
@@ -126,10 +117,10 @@ export default function Home() {
         {/* CTA Section */}
         <section className="bg-blue-900 text-white rounded-2xl p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Junte-se a Nós na Proteção dos Oceanos
+            Participe da Semana de Ciência e Tecnologia
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Participe dos nossos eventos e contribua para um futuro sustentável dos oceanos
+            Explore nossos eventos e faça parte dessa jornada de conhecimento e descobertas
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
@@ -145,10 +136,10 @@ export default function Home() {
               Participantes
             </Link>
             <Link 
-              href="/referencias"
+              href="/patrocinadores"
               className="bg-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors"
             >
-              Referências
+              Patrocinadores
             </Link>
           </div>
         </section>

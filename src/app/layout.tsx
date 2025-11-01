@@ -12,8 +12,8 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Década dos Oceanos - UFRN",
-  description: "Semana de Ciência e Tecnologia da UFRN - Década das Nações Unidas da Ciência Oceânica para o Desenvolvimento Sustentável (2021-2030)",
+  title: "Semana de Ciência e Tecnologia - LASA",
+  description: "Semana de Ciência e Tecnologia organizada pela Liga Acadêmica de Sistemas Aquáticos (LASA) - UFRN",
 };
 
 export default function RootLayout({

@@ -12,7 +12,7 @@ export default function ParticipantesPage() {
             Participantes
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Conheça os pesquisadores e especialistas que estão contribuindo para a Década dos Oceanos na UFRN
+            Conheça os pesquisadores e especialistas que estão contribuindo para o evento
           </p>
         </div>
 

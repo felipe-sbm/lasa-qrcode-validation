@@ -1,14 +1,14 @@
-# Década dos Oceanos - UFRN
+# Semana de Ciência e Tecnologia - LASA
 
-Projeto desenvolvido para a **Semana de Ciência e Tecnologia da UFRN**, apresentando a iniciativa da **Década das Nações Unidas da Ciência Oceânica para o Desenvolvimento Sustentável (2021-2030)**.
+Projeto desenvolvido pela **Liga Acadêmica de Sistemas Aquáticos (LASA)** para a **Semana de Ciência e Tecnologia da UFRN**.
 
 ## Sobre o Projeto
 
-Este site apresenta informações sobre a Década dos Oceanos através de:
-- **Página Inicial**: Apresentação da iniciativa e seus 7 objetivos principais
-- **Eventos**: 3 eventos programados (Palestra, Workshop e Mesa Redonda)
+Este site apresenta os eventos da Semana de Ciência e Tecnologia organizada pela LASA, incluindo:
+- **Página Inicial**: Apresentação da LASA e da Semana de Ciência e Tecnologia
+- **Eventos**: Diversos eventos incluindo palestras, workshops e mesas redondas (incluindo a Década dos Oceanos)
 - **Participantes**: Perfis dos pesquisadores e especialistas envolvidos
-- **Referências**: Bibliografia e recursos sobre oceanografia e conservação marinha
+- **Inscrições**: Cada evento possui um formulário do Google Forms para inscrição (ativo apenas em datas específicas)
 
 ## Tecnologias Utilizadas
 
@@ -42,12 +42,14 @@ src/
 ## Funcionalidades
 
 ### Página Inicial
-- Hero section com imagem de destaque
-- Cards com os 7 objetivos da Década dos Oceanos
-- Preview dos 3 eventos principais
+- Hero section com slideshow de imagens
+- Informações sobre a LASA
+- Preview dos eventos principais
 - Call-to-action para outras páginas
 
 ### Página de Eventos
+- Botões de inscrição via Google Forms (ativo apenas em datas/horários específicos)
+- Informações detalhadas sobre cada evento
 - Lista completa dos 3 eventos
 - Informações de data, horário e local
 - Links para páginas individuais
