@@ -47,57 +47,192 @@ export interface Patrocinador {
 export const participantes: Participante[] = [
   {
     id: "1",
-    nome: "Dra. Marina Costa",
-    cargo: "Oceanógrafa",
-    instituicao: "UFRN - Universidade Federal do Rio Grande do Norte",
+    nome: "Mary",
+    cargo: "Organizadora e Ministrante",
+    instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-    bio: "Doutora em Oceanografia Biológica com mais de 15 anos de experiência em pesquisas sobre ecossistemas marinhos costeiros. Coordenadora do projeto de monitoramento da biodiversidade marinha do litoral norte-rio-grandense.",
-    email: "marina.costa@ufrn.br"
+    bio: "Organizadora de eventos e ministrante de cursos sobre geotecnologias e consultoria ambiental. Coordena projetos de pesquisa e extensão na área de sistemas aquáticos.",
+    email: ""
   },
   {
     id: "2",
-    nome: "Dr. Roberto Marinho",
-    cargo: "Biólogo Marinho",
-    instituicao: "UFRN - Departamento de Oceanografia",
+    nome: "Jazi",
+    cargo: "Organizadora de Eventos",
+    instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
-    bio: "Especialista em conservação de tartarugas marinhas e ecologia comportamental. Lidera projetos de preservação de espécies ameaçadas no litoral nordestino há 10 anos.",
-    email: "roberto.marinho@ufrn.br"
+    bio: "Organizadora responsável por palestras e eventos sobre saneamento ambiental e sistemas aquáticos.",
+    email: ""
   },
   {
     id: "3",
-    nome: "Profª. Ana Flávia Santos",
-    cargo: "Professora de Ciências Marinhas",
-    instituicao: "UFRN - Instituto de Ciências do Mar",
+    nome: "Paula",
+    cargo: "Organizadora do Colóquio",
+    instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop",
-    bio: "Doutora em Ciências Marinhas com foco em mudanças climáticas e seus impactos nos oceanos. Desenvolve pesquisas sobre acidificação oceânica e aquecimento global.",
-    email: "ana.santos@ufrn.br"
+    bio: "Organizadora do Colóquio de Águas Subterrâneas, especialista em recursos hídricos subterrâneos.",
+    email: ""
   },
   {
     id: "4",
-    nome: "MSc. Carlos Eduardo Lima",
-    cargo: "Pesquisador em Oceanografia Física",
-    instituicao: "UFRN - Laboratório de Oceanografia Física",
+    nome: "Filipe Gregório de Farias e Silva",
+    cargo: "Palestrante - Tecnologia Anammox",
+    instituicao: "Pesquisador em Tratamento de Efluentes",
     foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    bio: "Mestre em Oceanografia Física, especializado em correntes marinhas e modelagem oceânica. Atua no desenvolvimento de modelos preditivos para fenômenos oceânicos.",
-    email: "carlos.lima@ufrn.br"
+    bio: "Especialista em tecnologia Anammox para tratamento de águas residuárias em clima tropical. Apresenta soluções sustentáveis para efluentes concentrados.",
+    email: ""
   },
   {
     id: "5",
-    nome: "Dra. Juliana Ferreira",
-    cargo: "Bióloga e Educadora Ambiental",
-    instituicao: "UFRN - Núcleo de Educação Ambiental",
+    nome: "Thalyana",
+    cargo: "Participante - Mostra de Laboratórios",
+    instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    bio: "Doutora em Educação Ambiental com experiência em projetos de conscientização sobre preservação marinha. Coordena programas de educação oceânica em escolas públicas.",
-    email: "juliana.ferreira@ufrn.br"
+    bio: "Membro da equipe da Mostra de Laboratórios sobre Cultura Oceânica. Atua em projetos de pesquisa sobre ecossistemas marinhos.",
+    email: ""
   },
   {
     id: "6",
-    nome: "Dr. Pedro Henrique Alves",
-    cargo: "Geólogo Marinho",
-    instituicao: "UFRN - Departamento de Geologia",
+    nome: "Beatriz",
+    cargo: "Participante - Múltiplos Eventos",
+    instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-    bio: "Doutor em Geologia Marinha, especialista em processos costeiros e erosão. Desenvolve estudos sobre a dinâmica sedimentar e morfologia costeira do RN.",
-    email: "pedro.alves@ufrn.br"
+    bio: "Participante ativa em eventos sobre cultura oceânica, colóquio de águas subterrâneas e consultoria ambiental.",
+    email: ""
+  },
+  {
+    id: "7",
+    nome: "Jessiane",
+    cargo: "Participante - Múltiplos Eventos",
+    instituicao: "LASA - UFRN",
+    foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+    bio: "Membro da equipe da Mostra de Laboratórios e Palestra do CREA. Contribui com pesquisas sobre sistemas aquáticos.",
+    email: ""
+  },
+  {
+    id: "8",
+    nome: "Felipe",
+    cargo: "Participante - Mostra de Laboratórios",
+    instituicao: "LASA - UFRN",
+    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bio: "Membro da equipe de apresentação da Mostra de Laboratórios sobre Cultura Oceânica.",
+    email: ""
+  },
+  {
+    id: "9",
+    nome: "Thainara",
+    cargo: "Participante - Múltiplos Minicursos",
+    instituicao: "LASA - UFRN",
+    foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    bio: "Participante de minicursos sobre QGIS e Brasil Mais, além de palestras sobre geotecnologias e consultoria ambiental.",
+    email: ""
+  },
+  {
+    id: "10",
+    nome: "Leticia",
+    cargo: "Participante - Mostra de Laboratórios",
+    instituicao: "LASA - UFRN",
+    foto: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+    bio: "Membro da equipe da Mostra de Laboratórios sobre Cultura Oceânica.",
+    email: ""
+  },
+  {
+    id: "11",
+    nome: "Mesael",
+    cargo: "Participante - Múltiplos Eventos",
+    instituicao: "LASA - UFRN",
+    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bio: "Participante em eventos sobre saneamento, colóquio de águas subterrâneas e geotecnologias.",
+    email: ""
+  },
+  {
+    id: "12",
+    nome: "Elisa",
+    cargo: "Participante - Palestra do CREA",
+    instituicao: "LASA - UFRN",
+    foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    bio: "Participante da Palestra do CREA sobre saneamento ambiental.",
+    email: ""
+  },
+  {
+    id: "13",
+    nome: "Luan",
+    cargo: "Aluno - Minicurso QGIS",
+    instituicao: "UFRN",
+    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bio: "Aluno participando do minicurso de Conexão QGIS e Brasil Mais na segunda-feira.",
+    email: ""
+  },
+  {
+    id: "14",
+    nome: "Júlio",
+    cargo: "Ministrante - Minicurso QGIS",
+    instituicao: "UFRN",
+    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bio: "Ministrante do curso de Conexão QGIS e Brasil Mais, especialista em geotecnologias.",
+    email: ""
+  },
+  {
+    id: "15",
+    nome: "Gustavo",
+    cargo: "Ministrante - Minicurso QGIS",
+    instituicao: "UFRN",
+    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bio: "Ministrante do curso de Conexão QGIS e Brasil Mais, especialista em geoprocessamento.",
+    email: ""
+  },
+  {
+    id: "16",
+    nome: "Camila",
+    cargo: "Participante - Colóquio de Águas Subterrâneas",
+    instituicao: "UFRN",
+    foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    bio: "Membro da equipe fechada do Colóquio de Águas Subterrâneas.",
+    email: ""
+  },
+  {
+    id: "17",
+    nome: "Bárbara",
+    cargo: "Participante - Colóquio de Águas Subterrâneas",
+    instituicao: "UFRN",
+    foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    bio: "Membro da equipe fechada do Colóquio de Águas Subterrâneas.",
+    email: ""
+  },
+  {
+    id: "18",
+    nome: "Sara",
+    cargo: "Participante - Múltiplos Eventos",
+    instituicao: "UFRN",
+    foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    bio: "Participante do Colóquio de Águas Subterrâneas e Palestra sobre Saneamento em Natal.",
+    email: ""
+  },
+  {
+    id: "19",
+    nome: "Nelis",
+    cargo: "Participante - Colóquio de Águas Subterrâneas",
+    instituicao: "UFRN",
+    foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    bio: "Membro da equipe fechada do Colóquio de Águas Subterrâneas.",
+    email: ""
+  },
+  {
+    id: "20",
+    nome: "Gilbrano",
+    cargo: "Palestrante - CREA",
+    instituicao: "Conselho Regional de Engenharia e Agronomia - CREA",
+    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bio: "Especialista em saneamento e gestão ambiental pelo CREA, palestrante sobre práticas ambientais.",
+    email: ""
+  },
+  {
+    id: "21",
+    nome: "Arsban",
+    cargo: "Palestrante - Saneamento em Natal",
+    instituicao: "Autoridade de Saneamento de Natal",
+    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    bio: "Especialista em infraestrutura de saneamento e gestão de resíduos em Natal.",
+    email: ""
   }
 ];
 
@@ -105,150 +240,229 @@ export const participantes: Participante[] = [
 export const eventos: Evento[] = [
   {
     id: "1",
-    titulo: "A Década dos Oceanos: Desafios e Oportunidades",
-    descricao: "Palestra sobre a Década das Nações Unidas da Ciência Oceânica para o Desenvolvimento Sustentável (2021-2030).",
+    titulo: "Cerimônia de Abertura",
+    descricao: "Cerimônia de abertura da Semana de Ciência e Tecnologia 2025.",
     descricaoCompleta: `
-      <p>A Década dos Oceanos é uma iniciativa global da ONU que visa mobilizar a comunidade científica, governos, setor privado e sociedade civil para reverter o ciclo de declínio da saúde dos oceanos e criar melhores condições para o desenvolvimento sustentável.</p>
-      
-      <p>Nesta palestra, exploraremos os sete resultados esperados da Década dos Oceanos:</p>
-      <ul>
-        <li><strong>Um oceano limpo:</strong> onde as fontes de poluição são identificadas e reduzidas ou removidas</li>
-        <li><strong>Um oceano saudável e resiliente:</strong> onde os ecossistemas marinhos são compreendidos, protegidos, restaurados e gerenciados</li>
-        <li><strong>Um oceano produtivo:</strong> que sustenta o abastecimento de alimentos e uma economia oceânica sustentável</li>
-        <li><strong>Um oceano previsto:</strong> onde a sociedade compreende e pode responder às mudanças nas condições oceânicas</li>
-        <li><strong>Um oceano seguro:</strong> onde a vida e os meios de subsistência são protegidos de perigos relacionados ao oceano</li>
-        <li><strong>Um oceano acessível:</strong> com acesso aberto e equitativo a dados, informações e tecnologia</li>
-        <li><strong>Um oceano inspirador e envolvente:</strong> onde a sociedade compreende e valoriza o oceano</li>
-      </ul>
-      
-      <p>Discutiremos também os principais desafios enfrentados pelos oceanos atualmente, como a poluição por plásticos, a acidificação oceânica, a perda de biodiversidade marinha e os impactos das mudanças climáticas. Além disso, apresentaremos as oportunidades de pesquisa, inovação e colaboração que a Década dos Oceanos proporciona para a comunidade científica brasileira.</p>
-      
-      <p>O evento contará com apresentação de dados sobre a situação dos oceanos no litoral do Rio Grande do Norte, destacando iniciativas locais de conservação e pesquisa marinha desenvolvidas pela UFRN.</p>
+      <p>Bem-vindo à Semana de Ciência e Tecnologia 2025 organizada pela LASA!</p>
+      <p>Junte-se a nós para a cerimônia de abertura onde compartilharemos a programação dos três dias de eventos, palestras, workshops e atividades práticas sobre ciência, tecnologia e meio ambiente.</p>
+      <p>Este é o início de uma semana repleta de conhecimento, inovação e oportunidades de aprendizado com pesquisadores e especialistas em diversas áreas.</p>
     `,
-    data: "28 de outubro de 2025",
-    horario: "14:00 - 16:00",
+    data: "17 de novembro de 2025",
+    horario: "10:00 - 12:00",
     local: "Auditório do Centro de Biociências - UFRN",
     imagens: [
       "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1", "3", "5"],
-    categoria: "Palestra",
+    autoresIds: ["1"],
+    categoria: "Abertura",
     formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform?usp=dialog",
     formularioAtivo: true
   },
   {
     id: "2",
-    titulo: "Biodiversidade Marinha do Litoral Potiguar",
-    descricao: "Workshop prático sobre identificação de espécies marinhas e técnicas de monitoramento da biodiversidade costeira.",
+    titulo: "Mostra de Laboratórios - Cultura Oceânica",
+    descricao: "Mostra de laboratórios apresentando projetos sobre cultura oceânica com LASA, GGEMMA e Saberes do Oceano (IFRN).",
     descricaoCompleta: `
-      <p>O litoral do Rio Grande do Norte abriga uma rica diversidade de ecossistemas marinhos, incluindo recifes de corais, manguezais, praias arenosas e costões rochosos. Esta diversidade de habitats sustenta uma fauna e flora marinha única e de grande importância ecológica e econômica.</p>
-      
-      <p>Neste workshop prático, os participantes terão a oportunidade de:</p>
-      <ul>
-        <li>Aprender sobre as principais espécies marinhas encontradas no litoral potiguar</li>
-        <li>Conhecer técnicas de identificação e catalogação de organismos marinhos</li>
-        <li>Compreender a importância ecológica de cada grupo taxonômico</li>
-        <li>Praticar métodos de monitoramento da biodiversidade marinha</li>
-        <li>Entender os principais desafios de conservação da fauna e flora costeira</li>
-      </ul>
-      
-      <p><strong>Espécies em destaque:</strong></p>
-      <ul>
-        <li><strong>Tartarugas marinhas:</strong> Cinco das sete espécies de tartarugas marinhas do mundo ocorrem no litoral brasileiro, incluindo a tartaruga-de-pente (Eretmochelys imbricata), criticamente ameaçada de extinção</li>
-        <li><strong>Peixes recifais:</strong> Mais de 200 espécies habitam os recifes costeiros do RN, incluindo o peixe-palhaço e o peixe-papagaio</li>
-        <li><strong>Corais:</strong> Espécies endêmicas como o coral-cérebro e coral-estrela formam importantes recifes na costa potiguar</li>
-        <li><strong>Mamíferos marinhos:</strong> Golfinhos e baleias são avistados regularmente na costa, especialmente durante períodos migratórios</li>
-      </ul>
-      
-      <p>O workshop incluirá atividades práticas de observação de espécimes preservados, análise de fotografias subaquáticas e demonstração de equipamentos de pesquisa marinha. Os participantes receberão materiais didáticos sobre biodiversidade marinha local.</p>
-      
-      <p><strong>Atividade prática:</strong> Saída de campo para observação de organismos marinhos na Praia de Ponta Negra (sujeita às condições climáticas).</p>
+      <p>Conheça os trabalhos desenvolvidos por nossos laboratórios de pesquisa em oceanografia e ciências marinhas!</p>
+      <p>Esta mostra apresentará os projetos de pesquisa sobre cultura oceânica, educação ambiental e conservação marinha desenvolvidos pela LASA, GGEMMA e Saberes do Oceano do IFRN.</p>
+      <p><strong>Organizador:</strong> Mary</p>
+      <p><strong>Equipe:</strong> Thalyana, Beatriz, Jessiane, Felipe, Thainara, Leticia</p>
     `,
-    data: "29 de outubro de 2025",
-    horario: "09:00 - 13:00",
-    local: "Laboratório de Biologia Marinha - UFRN",
+    data: "17 de novembro de 2025",
+    horario: "14:00 - 17:00",
+    local: "Laboratórios e Espaços de Pesquisa - UFRN",
     imagens: [
       "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1559825481-12a05cc00344?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["2", "1", "6"],
-    categoria: "Workshop",
-    formularioUrl: "https://forms.google.com/exemplo-biodiversidade",
-    formularioAtivo: false
+    autoresIds: ["1", "5", "6", "7", "8", "9", "10"],
+    categoria: "Mostra",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdGfAyQoM9toQos5jzf2VNSe_7eV6GX85Zl9KkOqmb46B-h5Q/viewform?usp=dialog",
+    formularioAtivo: true
   },
   {
     id: "3",
-    titulo: "Mudanças Climáticas e os Oceanos",
-    descricao: "Mesa redonda sobre os impactos das mudanças climáticas nos ecossistemas marinhos e estratégias de mitigação.",
+    titulo: "Palestra do CREA - Saneamento Ambiental",
+    descricao: "Palestra com especialista do CREA sobre saneamento e gestão ambiental.",
     descricaoCompleta: `
-      <p>As mudanças climáticas representam uma das maiores ameaças aos oceanos e aos ecossistemas marinhos do planeta. O aumento da temperatura global está causando profundas alterações nos mares, afetando desde organismos microscópicos até grandes mamíferos marinhos.</p>
-      
-      <p><strong>Principais impactos discutidos:</strong></p>
-      
-      <h3>1. Aquecimento dos Oceanos</h3>
-      <p>Os oceanos absorvem cerca de 90% do calor excedente do planeta. Isso está resultando em:</p>
-      <ul>
-        <li>Branqueamento de corais em escala global</li>
-        <li>Alteração na distribuição de espécies marinhas</li>
-        <li>Aumento da intensidade de furacões e tempestades tropicais</li>
-        <li>Derretimento das calotas polares e elevação do nível do mar</li>
-      </ul>
-      
-      <h3>2. Acidificação Oceânica</h3>
-      <p>O excesso de CO₂ na atmosfera está sendo absorvido pelos oceanos, causando:</p>
-      <ul>
-        <li>Redução do pH oceânico (acidificação)</li>
-        <li>Dificuldade na formação de conchas e esqueletos de carbonato de cálcio</li>
-        <li>Ameaça a moluscos, corais e outros organismos calcificadores</li>
-        <li>Impactos na cadeia alimentar marinha</li>
-      </ul>
-      
-      <h3>3. Desoxigenação</h3>
-      <p>Águas mais quentes retêm menos oxigênio dissolvido:</p>
-      <ul>
-        <li>Expansão de zonas mortas (áreas com baixo oxigênio)</li>
-        <li>Mortalidade em massa de organismos marinhos</li>
-        <li>Mudanças comportamentais em peixes e invertebrados</li>
-      </ul>
-      
-      <h3>4. Elevação do Nível do Mar</h3>
-      <p>Consequências para áreas costeiras:</p>
-      <ul>
-        <li>Erosão costeira acelerada</li>
-        <li>Inundação de áreas baixas e manguezais</li>
-        <li>Salinização de aquíferos costeiros</li>
-        <li>Ameaça a comunidades costeiras e infraestrutura</li>
-      </ul>
-      
-      <p><strong>Estratégias de mitigação e adaptação:</strong></p>
-      <ul>
-        <li>Criação e expansão de áreas marinhas protegidas</li>
-        <li>Restauração de ecossistemas costeiros (manguezais, recifes)</li>
-        <li>Desenvolvimento de tecnologias de captura de carbono</li>
-        <li>Redução da poluição e da pesca predatória</li>
-        <li>Educação e conscientização pública</li>
-        <li>Políticas públicas baseadas em ciência</li>
-      </ul>
-      
-      <p>A mesa redonda contará com apresentação de dados científicos recentes, estudos de caso do litoral brasileiro e debate sobre ações concretas que podem ser implementadas em nível local, nacional e global.</p>
-      
-      <p><strong>Haverá sessão de perguntas e respostas ao final do evento.</strong></p>
+      <p>Palestra apresentada por Gilbrano do Conselho Regional de Engenharia e Agronomia (CREA), abordando temas relacionados ao saneamento ambiental e boas práticas em gestão de recursos hídricos.</p>
+      <p><strong>Palestrante:</strong> Gilbrano (CREA)</p>
+      <p><strong>Organizador:</strong> Jazi</p>
+      <p><strong>Equipe:</strong> Jessiane, Mesael, Elisa</p>
     `,
-    data: "30 de outubro de 2025",
-    horario: "15:00 - 18:00",
-    local: "Sala de Conferências - Centro de Ciências Exatas e da Terra - UFRN",
+    data: "17 de novembro de 2025",
+    horario: "17:00 - 18:00",
+    local: "Sala de Conferências - UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["3", "4", "1"],
-    categoria: "Mesa Redonda",
-    formularioUrl: "https://forms.google.com/exemplo-mudancas-climaticas",
+    autoresIds: ["2", "20", "7", "11", "12"],
+    categoria: "Palestra",
+    formularioUrl: "",
+    formularioAtivo: false
+  },
+  {
+    id: "4",
+    titulo: "Minicurso - Conexão QGIS e Brasil Mais",
+    descricao: "Minicurso prático sobre GIS e geotecnologias aplicadas ao Brasil.",
+    descricaoCompleta: `
+      <p>Aprenda a utilizar as ferramentas QGIS e Brasil Mais para análise espacial e geoprocessamento.</p>
+      <p><strong>Ministrantes:</strong> Mary, Júlio, Gustavo</p>
+      <p><strong>Aluno:</strong> Luan</p>
+      <p><strong>Horário:</strong> 15:00 - 17:00</p>
+      <p>Este minicurso apresentará técnicas de mapeamento digital e análise geoespacial com ferramentas de código aberto para pesquisa ambiental.</p>
+    `,
+    data: "17 de novembro de 2025",
+    horario: "15:00 - 17:00",
+    local: "Laboratório de Geomática - UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1552996881-daf0e9f37341?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["1", "13", "14", "15"],
+    categoria: "Minicurso",
+    formularioUrl: "",
+    formularioAtivo: false
+  },
+  {
+    id: "5",
+    titulo: "Colóquio de Águas Subterrâneas",
+    descricao: "Colóquio sobre pesquisa e gestão de águas subterrâneas.",
+    descricaoCompleta: `
+      <p>Evento acadêmico dedicado à discussão de pesquisas, tecnologias e estratégias de gestão de águas subterrâneas.</p>
+      <p><strong>Organizador:</strong> Paula</p>
+      <p><strong>Período:</strong> 08:00 - 17:00 (dia inteiro)</p>
+      <p><strong>Equipe (Fechada):</strong> Camila, Mesael, Bárbara, Sara, Nelis</p>
+      <p>Este é um evento com inscrição por equipe fechada. Participantes selecionados apresentarão seus trabalhos e pesquisas sobre aquíferos, contaminação e preservação de recursos hídricos subterrâneos.</p>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "08:00 - 17:00",
+    local: "Auditório e Laboratórios - UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1581092918692-8d1d08905f23?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581092162562-40038e57e0b5?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["3", "16", "11", "17", "18", "19"],
+    categoria: "Colóquio",
+    formularioUrl: "",
+    formularioAtivo: false
+  },
+  {
+    id: "6",
+    titulo: "Palestra - Adaptação da Tecnologia Anammox para Tratamento de Águas Residuárias",
+    descricao: "Palestra sobre tecnologias inovadoras de tratamento de efluentes em clima tropical.",
+    descricaoCompleta: `
+      <p>Palestra apresentando a tecnologia Anammox (anaerobic ammonia oxidation) como solução sustentável para tratamento de águas residuárias em ambientes de clima tropical.</p>
+      <p><strong>Palestrante:</strong> Filipe Gregório de Farias e Silva</p>
+      <p><strong>Organizador:</strong> Mary</p>
+      <p><strong>Horário:</strong> 17:00</p>
+      <p>Conheça como essa tecnologia revolucionária pode ser aplicada em contextos tropicais, reduzindo custos operacionais e impactos ambientais no tratamento de efluentes concentrados.</p>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "17:00 - 18:30",
+    local: "Auditório - UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1581092918692-8d1d08905f23?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["4"],
+    categoria: "Palestra",
+    formularioUrl: "",
+    formularioAtivo: false
+  },
+  {
+    id: "7",
+    titulo: "Palestra - Saneamento em Natal",
+    descricao: "Palestra sobre saneamento e gestão de resíduos na cidade de Natal.",
+    descricaoCompleta: `
+      <p>Palestra apresentando os desafios e soluções de saneamento na cidade de Natal, com foco em tratamento de efluentes e gestão de resíduos sólidos.</p>
+      <p><strong>Palestrante:</strong> Arsban</p>
+      <p><strong>Organizador:</strong> Jazi</p>
+      <p><strong>Equipe:</strong> Beatriz, Sara</p>
+      <p><strong>Horário:</strong> 19:00</p>
+      <p>Conheça as iniciativas municipais, desafios operacionais e perspectivas futuras para melhorar a infraestrutura de saneamento em Natal.</p>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "19:00 - 20:00",
+    local: "Sala de Conferências - UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1581092918692-8d1d08905f23?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["2", "21", "6", "18"],
+    categoria: "Palestra",
+    formularioUrl: "",
+    formularioAtivo: false
+  },
+  {
+    id: "8",
+    titulo: "Minicurso - Conexão QGIS e Brasil Mais (Turma 2)",
+    descricao: "Segunda turma do minicurso sobre GIS e geotecnologias.",
+    descricaoCompleta: `
+      <p>Segunda turma do minicurso prático sobre QGIS e Brasil Mais para análise espacial e geoprocessamento.</p>
+      <p><strong>Ministrantes:</strong> Mary, Júlio, Gustavo</p>
+      <p><strong>Aluno:</strong> Thainara</p>
+      <p><strong>Horário:</strong> 15:00 - 17:00</p>
+      <p>Este minicurso apresentará técnicas de mapeamento digital e análise geoespacial com ferramentas de código aberto para pesquisa ambiental.</p>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "15:00 - 17:00",
+    local: "Laboratório de Geomática - UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1552996881-daf0e9f37341?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["1", "9", "14", "15"],
+    categoria: "Minicurso",
+    formularioUrl: "",
+    formularioAtivo: false
+  },
+  {
+    id: "9",
+    titulo: "Geotecnologias e Soluções Ambientais",
+    descricao: "Palestra sobre aplicações de geotecnologias para soluções ambientais com Cabugi Soluções.",
+    descricaoCompleta: `
+      <p>Palestra apresentando as aplicações práticas de geotecnologias no desenvolvimento de soluções ambientais.</p>
+      <p><strong>Empresa:</strong> Cabugi Soluções</p>
+      <p><strong>Organizador:</strong> Mary</p>
+      <p><strong>Equipe:</strong> Thainara, Beatriz, Mesael</p>
+      <p><strong>Horário:</strong> 10:00</p>
+      <p>Conheça como ferramentas de geoprocessamento e sensoriamento remoto são aplicadas em projetos de monitoramento ambiental, planejamento urbano e desenvolvimento sustentável.</p>
+    `,
+    data: "19 de novembro de 2025",
+    horario: "10:00 - 12:00",
+    local: "Auditório - UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1552996881-daf0e9f37341?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["1", "9", "6", "11"],
+    categoria: "Palestra",
+    formularioUrl: "",
+    formularioAtivo: false
+  },
+  {
+    id: "10",
+    titulo: "Entre o Campo e o Escritório - Ser um Consultor Ambiental Hoje",
+    descricao: "Palestra sobre a profissão de consultor ambiental com o CRNBio.",
+    descricaoCompleta: `
+      <p>Palestra explorar os desafios, oportunidades e rotina da profissão de consultor ambiental nos dias atuais.</p>
+      <p><strong>Instituição:</strong> CRNBio (Conselho Regional de Biologia)</p>
+      <p><strong>Organizador:</strong> Mary</p>
+      <p><strong>Equipe (Fechada):</strong> Thainara, Beatriz, Thallyana</p>
+      <p><strong>Horário:</strong> 15:00</p>
+      <p>Uma visão prática e sincera sobre a carreira de consultor ambiental, abrangendo desde projetos no campo até a elaboração de relatórios técnicos em escritório, com cases reais e perspectivas de mercado.</p>
+    `,
+    data: "19 de novembro de 2025",
+    horario: "15:00 - 17:00",
+    local: "Auditório - UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["1", "9", "6", "5"],
+    categoria: "Palestra",
+    formularioUrl: "",
     formularioAtivo: false
   }
 ];
