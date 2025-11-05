@@ -14,6 +14,7 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "Semana de Ciência e Tecnologia - LASA",
   description: "Semana de Ciência e Tecnologia organizada pela Liga Acadêmica de Sistemas Aquáticos (LASA) - UFRN",
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({

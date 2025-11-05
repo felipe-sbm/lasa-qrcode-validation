@@ -25,6 +25,13 @@ body {
   font-family: var(--font-figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
 }
 
+/* Ensure media elements scale on small screens */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Header gradient background */
 .bg-gradient-header {
   background: linear-gradient(to bottom, #0000 2px, #c9d0d9 2px, #b3c0cc 30%, #0000 30%), 

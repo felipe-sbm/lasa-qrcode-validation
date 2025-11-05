@@ -13,13 +13,13 @@ export default function Home() {
             {/* Texto à esquerda */}
             <div className="space-y-6">
               <div>
-                <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-4">
                   Semana de Ciência e Tecnologia 2025
                 </h1>
-                <p className="text-2xl text-blue-600 mb-2">Laboratório de Soluções Ambientais • UFRN</p>
+                <p className="text-lg sm:text-xl text-blue-600 mb-2">Laboratório de Soluções Ambientais • UFRN</p>
               </div>
 
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                 Bem-vindo à <strong>Semana de Ciência e Tecnologia</strong> organizada pela LASA! 
                 {" "}Explore diversos eventos sobre temas atuais e relevantes para a ciência e tecnologia, 
                 incluindo a Década dos Oceanos, biodiversidade marinha, mudanças climáticas e muito mais.
@@ -28,13 +28,13 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link 
                   href="/eventos"
-                  className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+                  className="bg-blue-600 text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
                 >
                   Ver Eventos
                 </Link>
                 <Link 
                   href="/participantes"
-                  className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg border-2 border-blue-600"
+                  className="bg-white text-blue-900 px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg border-2 border-blue-600"
                 >
                   Conheça os Participantes
                 </Link>

@@ -25,7 +25,7 @@ export default function ImageSlideshow() {
   }, []);
 
   return (
-    <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+    <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
       {images.map((src, index) => (
         <div
           key={src}

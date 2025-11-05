@@ -135,8 +135,8 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["1", "3", "5"],
     categoria: "Palestra",
-    formularioUrl: "https://forms.google.com/exemplo-decada-oceanos",
-    formularioAtivo: false
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform?usp=dialog",
+    formularioAtivo: true
   },
   {
     id: "2",
