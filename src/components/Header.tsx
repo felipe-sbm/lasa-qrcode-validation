@@ -17,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-600 shadow-xl border-b-4 border-cyan-400">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-[#018768] to-[#A0C556] shadow-xl border-b-4 border-[#A0C556]">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -38,7 +38,7 @@ export default function Header() {
               <h1 className="text-lg sm:text-2xl font-extrabold text-white tracking-tight leading-tight">
                 Semana de Ciência e Tecnologia
               </h1>
-              <p className="text-[10px] sm:text-xs text-cyan-200 font-medium">
+              <p className="text-[10px] sm:text-xs text-white/90 font-medium">
                 Laboratório de Soluções Ambientais • UFRN
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function Header() {
                       block px-4 sm:px-6 py-2 rounded-lg font-semibold text-sm
                       transition-all duration-200 no-underline
                       ${isActive("/") && pathname === "/" 
-                        ? "bg-white text-blue-900 shadow-lg" 
+                        ? "bg-white text-[#018768] shadow-lg" 
                         : "text-white hover:bg-white/20 hover:shadow-md"
                       }
                     `}
@@ -70,7 +70,7 @@ export default function Header() {
                       block px-4 sm:px-6 py-2 rounded-lg font-semibold text-sm
                       transition-all duration-200 no-underline
                       ${isActive("/eventos") 
-                        ? "bg-white text-blue-900 shadow-lg" 
+                        ? "bg-white text-[#018768] shadow-lg" 
                         : "text-white hover:bg-white/20 hover:shadow-md"
                       }
                     `}
@@ -86,7 +86,7 @@ export default function Header() {
                       block px-4 sm:px-6 py-2 rounded-lg font-semibold text-sm
                       transition-all duration-200 no-underline
                       ${isActive("/participantes") 
-                        ? "bg-white text-blue-900 shadow-lg" 
+                        ? "bg-white text-[#018768] shadow-lg" 
                         : "text-white hover:bg-white/20 hover:shadow-md"
                       }
                     `}
@@ -102,7 +102,7 @@ export default function Header() {
                       block px-4 sm:px-6 py-2 rounded-lg font-semibold text-sm
                       transition-all duration-200 no-underline
                       ${isActive("/patrocinadores") 
-                        ? "bg-white text-blue-900 shadow-lg" 
+                        ? "bg-white text-[#018768] shadow-lg" 
                         : "text-white hover:bg-white/20 hover:shadow-md"
                       }
                     `}

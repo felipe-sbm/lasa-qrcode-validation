@@ -5,7 +5,7 @@ import ImageSlideshow from "@/components/ImageSlideshow";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       <main className="container mx-auto px-4 py-12">
         {/* Hero Section */}
         <section className="mb-16">
@@ -13,10 +13,10 @@ export default function Home() {
             {/* Texto à esquerda */}
             <div className="space-y-6">
               <div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-4">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#018768] mb-4">
                   Semana de Ciência e Tecnologia 2025
                 </h1>
-                <p className="text-lg sm:text-xl text-blue-600 mb-2">Laboratório de Soluções Ambientais • UFRN</p>
+                <p className="text-lg sm:text-xl text-[#018768] mb-2">Laboratório de Soluções Ambientais • UFRN</p>
               </div>
 
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
@@ -28,13 +28,13 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link 
                   href="/eventos"
-                  className="bg-blue-600 text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+                  className="bg-[#018768] text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-[#016B54] transition-colors shadow-lg"
                 >
                   Ver Eventos
                 </Link>
                 <Link 
                   href="/participantes"
-                  className="bg-white text-blue-900 px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg border-2 border-blue-600"
+                  className="bg-white text-[#018768] px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg border-2 border-[#018768]"
                 >
                   Conheça os Participantes
                 </Link>
@@ -48,11 +48,11 @@ export default function Home() {
 
         {/* Sobre a LASA Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">
+          <h2 className="text-3xl font-bold text-[#018768] text-center mb-10">
             Sobre a LASA
           </h2>
           
-          <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
+          <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto border-l-4 border-[#A0C556]">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               A <strong>Liga Acadêmica de Sistemas Aquáticos (LASA)</strong> é uma organização estudantil da UFRN 
               dedicada à pesquisa, educação e extensão nas áreas de oceanografia, ecologia aquática e ciências ambientais.
@@ -66,7 +66,7 @@ export default function Home() {
 
         {/* Eventos Destaque */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">
+          <h2 className="text-3xl font-bold text-[#018768] text-center mb-10">
             Eventos da Semana
           </h2>
           
@@ -86,10 +86,10 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mb-3">
+                  <span className="inline-block bg-green-100 text-[#018768] text-sm px-3 py-1 rounded-full mb-3">
                     {evento.categoria}
                   </span>
-                  <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                  <h3 className="text-xl font-semibold text-[#018768] mb-2">
                     {evento.titulo}
                   </h3>
                   <p className="text-gray-600 mb-4 line-clamp-2">
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="text-center mt-8">
             <Link 
               href="/eventos"
-              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+              className="inline-block bg-[#018768] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#016B54] transition-colors"
             >
               Ver Todos os Eventos
             </Link>
@@ -115,7 +115,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-blue-900 text-white rounded-2xl p-12 text-center">
+        <section className="bg-gradient-to-r from-[#018768] to-[#A0C556] text-white rounded-2xl p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Participe da Semana de Ciência e Tecnologia
           </h2>
@@ -125,19 +125,19 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
               href="/eventos"
-              className="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+              className="bg-white text-[#018768] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
             >
               Eventos
             </Link>
             <Link 
               href="/participantes"
-              className="bg-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors"
+              className="bg-[#018768] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#016B54] transition-colors border-2 border-white"
             >
               Participantes
             </Link>
             <Link 
               href="/patrocinadores"
-              className="bg-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors"
+              className="bg-[#018768] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#016B54] transition-colors border-2 border-white"
             >
               Patrocinadores
             </Link>
