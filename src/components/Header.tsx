@@ -30,7 +30,7 @@ export default function Header() {
                 src={"/lasa-white.png"}
                 width={60}
                 height={60}
-                alt="Logo LASA - Liga Acadêmica de Sistemas Aquáticos"
+                alt="Logo LASA - Laboratório de Soluções Ambientais"
                 className="shadow-lg"
               />
             </div>
@@ -107,7 +107,7 @@ export default function Header() {
                       }
                     `}
                   >
-                    Patrocinadores
+                    Apoio
                   </Link>
                 </li>
               </ul>
@@ -142,7 +142,7 @@ export default function Header() {
               <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Participantes</Link>
             </li>
             <li>
-              <Link href="/patrocinadores" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/patrocinadores') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Patrocinadores</Link>
+              <Link href="/patrocinadores" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/patrocinadores') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>
             </li>
           </ul>
         </nav>

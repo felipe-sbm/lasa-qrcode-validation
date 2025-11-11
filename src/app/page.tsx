@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { eventos } from "@/data/data";
-import ImageSlideshow from "@/components/ImageSlideshow";
 
 export default function Home() {
   return (
@@ -32,34 +31,43 @@ export default function Home() {
                 >
                   Ver Eventos
                 </Link>
-                <Link 
-                  href="/participantes"
-                  className="bg-white text-[#018768] px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg border-2 border-[#018768]"
-                >
-                  Conheça os Participantes
-                </Link>
               </div>
             </div>
 
-            {/* Slideshow à direita */}
-            <ImageSlideshow />
+            {/* Logo LASA à direita */}
+            <div className="flex justify-center items-center">
+              <div className="relative w-full max-w-md h-64 sm:h-80 md:h-96 lg:h-[500px]">
+                <Image
+                  src="/lasa.png"
+                  alt="Logo LASA - Laboratório de Soluções Ambientais"
+                  fill
+                  className="object-contain drop-shadow-2xl"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Sobre a LASA Section */}
+        {/* Sobre O LASA Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-[#018768] text-center mb-10">
-            Sobre a LASA
+            Sobre O LASA
           </h2>
           
           <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto border-l-4 border-[#A0C556]">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              A <strong>Liga Acadêmica de Sistemas Aquáticos (LASA)</strong> é uma organização estudantil da UFRN 
-              dedicada à pesquisa, educação e extensão nas áreas de oceanografia, ecologia aquática e ciências ambientais.
+              O <strong>Laboratório de Soluções Ambientais (LASA)</strong> é um laboratório de excelência da UFRN 
+              dedicado ao estudo e propostas de mitigação de impactos ambientais.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Nossa missão é <strong>desenvolver pesquisas de alta qualidade que contribuam para a sustentabilidade 
+              da vida urbana e rural</strong>, utilizando tecnologias avançadas e metodologias inovadoras para 
+              compreender ambientes aquáticos e propor soluções de conservação.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Nossa missão é promover o conhecimento científico e a consciência ambiental através de eventos, 
-              palestras, workshops e atividades práticas que conectam estudantes, pesquisadores e a comunidade.
+              Através de eventos, palestras, workshops e atividades práticas, conectamos estudantes, 
+              pesquisadores e a comunidade para promover o conhecimento científico e a consciência ambiental.
             </p>
           </div>
         </section>

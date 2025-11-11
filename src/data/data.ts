@@ -51,7 +51,7 @@ export const participantes: Participante[] = [
     cargo: "Organizadora e Ministrante",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-    bio: "Organizadora de eventos e ministrante de cursos sobre geotecnologias e consultoria ambiental. Coordena projetos de pesquisa e extensão na área de sistemas aquáticos.",
+    bio: "Organizadora de eventos e ministrante de cursos sobre geotecnologias e consultoria ambiental. Coordena projetos de pesquisa e extensão no Laboratório de Soluções Ambientais (LASA).",
     email: ""
   },
   {
@@ -60,7 +60,7 @@ export const participantes: Participante[] = [
     cargo: "Organizadora de Eventos",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
-    bio: "Organizadora responsável por palestras e eventos sobre saneamento ambiental e sistemas aquáticos.",
+    bio: "Organizadora responsável por palestras e eventos sobre saneamento ambiental e soluções para sustentabilidade urbana e rural.",
     email: ""
   },
   {
@@ -260,8 +260,8 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["1"],
     categoria: "Cerimônia",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
-    formularioAtivo: true
+    formularioUrl: "",
+    formularioAtivo: false
   },
   {
     id: "2",
@@ -272,7 +272,7 @@ export const eventos: Evento[] = [
       
       <h3>Laboratórios Participantes:</h3>
       <ul>
-        <li><strong>LASA</strong> - Liga Acadêmica de Sistemas Aquáticos</li>
+        <li><strong>LASA</strong> - Laboratório de Soluções Ambientais</li>
         <li><strong>GEMMA</strong> - Grupo de Estudos do Meio Ambiente Marinho</li>
         <li><strong>Saberes do Oceano (IFRN)</strong></li>
       </ul>
@@ -317,7 +317,7 @@ export const eventos: Evento[] = [
       <p><strong>Sessão de perguntas e respostas ao final da palestra.</strong></p>
     `,
     data: "17 de novembro de 2025",
-    horario: "15:00 - 17:00",
+    horario: "17:00 - 19:00",
     local: "Escola de Ciência e Tecnologia - UFRN",
     imagens: [
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
@@ -668,66 +668,18 @@ export const patrocinadores: Patrocinador[] = [
   {
     id: "1",
     nome: "UFRN - Universidade Federal do Rio Grande do Norte",
-    logo: "https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=400&fit=crop",
-    descricao: "Principal instituição de ensino superior do estado, apoiando pesquisa e extensão em ciências marinhas.",
+    logo: "/photos/ufrn.png",
+    descricao: "Principal instituição de ensino superior do estado, apoiando pesquisa e extensão em soluções ambientais e sustentabilidade.",
     website: "https://ufrn.br",
     categoria: "Ouro"
   },
   {
     id: "2",
-    nome: "CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico",
-    logo: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=400&fit=crop",
-    descricao: "Agência de fomento à pesquisa científica e tecnológica no Brasil.",
-    website: "https://cnpq.br",
+    nome: "ECT - Escola de Ciências & Tecnologia",
+    logo: "/photos/ect-ufrn.png",
+    descricao: "Unidade acadêmica da UFRN dedicada ao ensino e pesquisa em ciências exatas e tecnológicas.",
+    website: "https://ect.ufrn.br",
     categoria: "Ouro"
-  },
-  {
-    id: "3",
-    nome: "CAPES - Coordenação de Aperfeiçoamento de Pessoal de Nível Superior",
-    logo: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=400&fit=crop",
-    descricao: "Fundação do Ministério da Educação que atua na expansão e consolidação da pós-graduação stricto sensu.",
-    website: "https://capes.gov.br",
-    categoria: "Prata"
-  },
-  {
-    id: "4",
-    nome: "Petrobras",
-    logo: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=400&fit=crop",
-    descricao: "Empresa brasileira de energia com projetos de pesquisa em oceanografia e meio ambiente.",
-    website: "https://petrobras.com.br",
-    categoria: "Prata"
-  },
-  {
-    id: "5",
-    nome: "Instituto Chico Mendes de Conservação da Biodiversidade",
-    logo: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop",
-    descricao: "Órgão ambiental responsável pela conservação da biodiversidade marinha brasileira.",
-    website: "https://icmbio.gov.br",
-    categoria: "Bronze"
-  },
-  {
-    id: "6",
-    nome: "Projeto TAMAR",
-    logo: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop",
-    descricao: "Programa brasileiro de conservação de tartarugas marinhas, reconhecido internacionalmente.",
-    website: "https://tamar.org.br",
-    categoria: "Bronze"
-  },
-  {
-    id: "7",
-    nome: "Fundação Grupo Boticário",
-    logo: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=400&fit=crop",
-    descricao: "Organização que apoia projetos de conservação da natureza em todo o Brasil.",
-    website: "https://fundacaogrupoboticario.org.br",
-    categoria: "Apoio"
-  },
-  {
-    id: "8",
-    nome: "Oceana Brasil",
-    logo: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop",
-    descricao: "ONG internacional dedicada à proteção e restauração dos oceanos do mundo.",
-    website: "https://oceana.org.br",
-    categoria: "Apoio"
   }
 ];
 

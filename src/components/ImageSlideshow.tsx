@@ -40,6 +40,42 @@ export default function ImageSlideshow() {
             className="object-cover"
             priority={index === 0}
           />
+          
+          {/* Overlay com logos apenas na primeira imagem */}
+          {index === 0 && (
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent flex flex-col items-center justify-start pt-8 gap-4">
+              <div className="flex items-center gap-6">
+                {/* Logo ECT */}
+                <div className="relative w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full p-3 shadow-xl">
+                  <Image
+                    src="/lasa.png"
+                    alt="Logo ECT"
+                    fill
+                    className="object-contain p-2"
+                  />
+                </div>
+                
+                {/* Logo Semana de CeT */}
+                <div className="relative w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full p-3 shadow-xl">
+                  <Image
+                    src="/lasa.png"
+                    alt="Logo VIII Semana de CeT"
+                    fill
+                    className="object-contain p-2"
+                  />
+                </div>
+              </div>
+              
+              <div className="text-center px-4">
+                <h2 className="text-white text-xl sm:text-2xl font-bold drop-shadow-lg">
+                  VIII Semana de Ciência e Tecnologia
+                </h2>
+                <p className="text-white/90 text-sm sm:text-base font-semibold drop-shadow-md">
+                  Escola de Ciência e Tecnologia - UFRN
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       ))}
       
