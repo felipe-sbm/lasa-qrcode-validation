@@ -241,229 +241,319 @@ export const eventos: Evento[] = [
   {
     id: "1",
     titulo: "Cerimônia de Abertura",
-    descricao: "Cerimônia de abertura da Semana de Ciência e Tecnologia 2025.",
+    descricao: "Abertura oficial da VIII Semana de Ciência e Tecnologia e da Trilha do Conhecimento LASA.",
     descricaoCompleta: `
-      <p>Bem-vindo à Semana de Ciência e Tecnologia 2025 organizada pela LASA!</p>
-      <p>Junte-se a nós para a cerimônia de abertura onde compartilharemos a programação dos três dias de eventos, palestras, workshops e atividades práticas sobre ciência, tecnologia e meio ambiente.</p>
-      <p>Este é o início de uma semana repleta de conhecimento, inovação e oportunidades de aprendizado com pesquisadores e especialistas em diversas áreas.</p>
+      <p>Bem-vindo à VIII Semana de Ciência e Tecnologia e à <strong>Trilha do Conhecimento LASA</strong>!</p>
+      
+      <p>Junte-se a nós para a cerimônia de abertura onde compartilharemos a programação completa dos três dias de eventos, palestras, minicursos e atividades práticas sobre ciência, tecnologia e meio ambiente.</p>
+      
+      <p>Este é o início de uma jornada repleta de conhecimento, inovação e oportunidades de aprendizado com pesquisadores, especialistas e profissionais de diversas áreas.</p>
+      
+      <p><strong>Programação dos dias 17, 18 e 19 de novembro na Escola de Ciência e Tecnologia - UFRN.</strong></p>
     `,
     data: "17 de novembro de 2025",
     horario: "10:00 - 12:00",
-    local: "Auditório do Centro de Biociências - UFRN",
+    local: "Escola de Ciência e Tecnologia - UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop"
     ],
     autoresIds: ["1"],
-    categoria: "Abertura",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform?usp=dialog",
+    categoria: "Cerimônia",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
     formularioAtivo: true
   },
   {
     id: "2",
-    titulo: "Mostra de Laboratórios - Cultura Oceânica",
-    descricao: "Mostra de laboratórios apresentando projetos sobre cultura oceânica com LASA, GGEMMA e Saberes do Oceano (IFRN).",
+    titulo: "Mostra de Laboratórios: Cultura Oceânica",
+    descricao: "Apresentação dos projetos LASA, GEMMA e Saberes do Oceano (IFRN) sobre cultura oceânica e conservação marinha.",
     descricaoCompleta: `
-      <p>Conheça os trabalhos desenvolvidos por nossos laboratórios de pesquisa em oceanografia e ciências marinhas!</p>
-      <p>Esta mostra apresentará os projetos de pesquisa sobre cultura oceânica, educação ambiental e conservação marinha desenvolvidos pela LASA, GGEMMA e Saberes do Oceano do IFRN.</p>
-      <p><strong>Organizador:</strong> Mary</p>
-      <p><strong>Equipe:</strong> Thalyana, Beatriz, Jessiane, Felipe, Thainara, Leticia</p>
+      <p>Explore os trabalhos desenvolvidos por laboratórios de pesquisa dedicados à oceanografia, educação ambiental e conservação dos oceanos!</p>
+      
+      <h3>Laboratórios Participantes:</h3>
+      <ul>
+        <li><strong>LASA</strong> - Liga Acadêmica de Sistemas Aquáticos</li>
+        <li><strong>GEMMA</strong> - Grupo de Estudos do Meio Ambiente Marinho</li>
+        <li><strong>Saberes do Oceano (IFRN)</strong></li>
+      </ul>
+      
+      <p>A mostra apresentará projetos de pesquisa, experimentos, materiais educativos e ações de extensão voltadas para a cultura oceânica, alfabetização marinha e sustentabilidade dos ecossistemas aquáticos.</p>
+      
+      <p><strong>Venha conhecer de perto o trabalho científico desenvolvido na UFRN e IFRN!</strong></p>
     `,
     data: "17 de novembro de 2025",
     horario: "14:00 - 17:00",
-    local: "Laboratórios e Espaços de Pesquisa - UFRN",
+    local: "Sala 3 - Escola de Ciência e Tecnologia - UFRN",
     imagens: [
+      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1559825481-12a05cc00344?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1", "5", "6", "7", "8", "9", "10"],
+    autoresIds: ["1", "2", "3"],
     categoria: "Mostra",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdGfAyQoM9toQos5jzf2VNSe_7eV6GX85Zl9KkOqmb46B-h5Q/viewform?usp=dialog",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
     formularioAtivo: true
   },
   {
     id: "3",
-    titulo: "Palestra do CREA - Saneamento Ambiental",
-    descricao: "Palestra com especialista do CREA sobre saneamento e gestão ambiental.",
+    titulo: "Palestra CREA: Engenharia Ambiental na Prática",
+    descricao: "Palestra com Gilbrando Medeiros Trajano Júnior, Engenheiro Ambiental do CREA-RN, sobre a atuação profissional.",
     descricaoCompleta: `
-      <p>Palestra apresentada por Gilbrano do Conselho Regional de Engenharia e Agronomia (CREA), abordando temas relacionados ao saneamento ambiental e boas práticas em gestão de recursos hídricos.</p>
-      <p><strong>Palestrante:</strong> Gilbrano (CREA)</p>
-      <p><strong>Organizador:</strong> Jazi</p>
-      <p><strong>Equipe:</strong> Jessiane, Mesael, Elisa</p>
+      <p>Descubra os desafios e oportunidades da profissão de Engenheiro Ambiental com um profissional atuante no mercado!</p>
+      
+      <h3>Palestrante:</h3>
+      <p><strong>Gilbrando Medeiros Trajano Júnior</strong><br>
+      Engenheiro Ambiental - CREA-RN</p>
+      
+      <h3>Temas abordados:</h3>
+      <ul>
+        <li>Atuação do engenheiro ambiental no mercado de trabalho</li>
+        <li>Papel do CREA na fiscalização e regulamentação</li>
+        <li>Projetos ambientais e licenciamento</li>
+        <li>Sustentabilidade e práticas ambientais</li>
+        <li>Responsabilidade técnica e ética profissional</li>
+      </ul>
+      
+      <p><strong>Sessão de perguntas e respostas ao final da palestra.</strong></p>
     `,
     data: "17 de novembro de 2025",
-    horario: "17:00 - 18:00",
-    local: "Sala de Conferências - UFRN",
+    horario: "15:00 - 17:00",
+    local: "Escola de Ciência e Tecnologia - UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["2", "20", "7", "11", "12"],
+    autoresIds: ["20"],
     categoria: "Palestra",
-    formularioUrl: "",
-    formularioAtivo: false
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioAtivo: true
   },
   {
     id: "4",
-    titulo: "Minicurso - Conexão QGIS e Brasil Mais",
-    descricao: "Minicurso prático sobre GIS e geotecnologias aplicadas ao Brasil.",
+    titulo: "Minicurso: Conexão QGIS e Brasil Mais (Dia 1)",
+    descricao: "Aprenda a utilizar QGIS e a plataforma Brasil Mais para geoprocessamento e análise espacial de dados ambientais.",
     descricaoCompleta: `
-      <p>Aprenda a utilizar as ferramentas QGIS e Brasil Mais para análise espacial e geoprocessamento.</p>
-      <p><strong>Ministrantes:</strong> Mary, Júlio, Gustavo</p>
-      <p><strong>Aluno:</strong> Luan</p>
-      <p><strong>Horário:</strong> 15:00 - 17:00</p>
-      <p>Este minicurso apresentará técnicas de mapeamento digital e análise geoespacial com ferramentas de código aberto para pesquisa ambiental.</p>
+      <p>Domine ferramentas essenciais para geotecnologias aplicadas ao meio ambiente!</p>
+      
+      <h3>Ministrantes:</h3>
+      <ul>
+        <li><strong>Prof. Dr. Mary Lúcia da Silva Nogueira</strong> - UFRN/LASA</li>
+        <li><strong>Júlio Danilo Soares de Santana</strong> - UFRN/LASA</li>
+        <li><strong>Gustavo</strong> - UFRN/LASA</li>
+      </ul>
+      
+      <h3>Conteúdo Programático:</h3>
+      <ul>
+        <li>Introdução ao QGIS: interface e funcionalidades básicas</li>
+        <li>Importação e manipulação de dados geoespaciais</li>
+        <li>Plataforma Brasil Mais: acesso e utilização</li>
+        <li>Integração QGIS e Brasil Mais</li>
+        <li>Análise espacial de dados ambientais</li>
+        <li>Elaboração de mapas temáticos</li>
+      </ul>
+      
+      <p><strong>Requisitos:</strong> Trazer notebook com QGIS instalado (versão 3.x ou superior).</p>
+      
+      <p><strong>Obs:</strong> Minicurso dividido em 2 dias (17 e 18/11).</p>
     `,
     data: "17 de novembro de 2025",
     horario: "15:00 - 17:00",
-    local: "Laboratório de Geomática - UFRN",
+    local: "Laboratório de Informática 3, 2º Andar - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1552996881-daf0e9f37341?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1", "13", "14", "15"],
+    autoresIds: ["1", "14", "15"],
     categoria: "Minicurso",
-    formularioUrl: "",
-    formularioAtivo: false
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioAtivo: true
   },
   {
     id: "5",
-    titulo: "Colóquio de Águas Subterrâneas",
-    descricao: "Colóquio sobre pesquisa e gestão de águas subterrâneas.",
+    titulo: "1º Colóquio das Águas Subterrâneas do RN",
+    descricao: "Evento dedicado à gestão e desafios das águas subterrâneas para o abastecimento no Rio Grande do Norte.",
     descricaoCompleta: `
-      <p>Evento acadêmico dedicado à discussão de pesquisas, tecnologias e estratégias de gestão de águas subterrâneas.</p>
-      <p><strong>Organizador:</strong> Paula</p>
-      <p><strong>Período:</strong> 08:00 - 17:00 (dia inteiro)</p>
-      <p><strong>Equipe (Fechada):</strong> Camila, Mesael, Bárbara, Sara, Nelis</p>
-      <p>Este é um evento com inscrição por equipe fechada. Participantes selecionados apresentarão seus trabalhos e pesquisas sobre aquíferos, contaminação e preservação de recursos hídricos subterrâneos.</p>
+      <p>Participe do primeiro colóquio dedicado exclusivamente às águas subterrâneas do RN!</p>
+      
+      <h3>Tema Central:</h3>
+      <p><strong>"Gestão e Desafios das Águas Subterrâneas para o Abastecimento no RN"</strong></p>
+      
+      <h3>Programação:</h3>
+      <ul>
+        <li>Situação atual dos aquíferos do RN</li>
+        <li>Desafios na gestão de recursos hídricos subterrâneos</li>
+        <li>Tecnologias de prospecção e monitoramento</li>
+        <li>Legislação e políticas públicas</li>
+        <li>Qualidade da água subterrânea</li>
+        <li>Casos de sucesso e boas práticas</li>
+        <li>Sustentabilidade e uso racional</li>
+      </ul>
+      
+      <p>O colóquio reunirá pesquisadores, gestores públicos, profissionais da área e estudantes para debater soluções e compartilhar conhecimentos sobre este recurso vital para o RN.</p>
+      
+      <p><strong>Evento com programação integral durante todo o dia.</strong></p>
     `,
     data: "18 de novembro de 2025",
     horario: "08:00 - 17:00",
-    local: "Auditório e Laboratórios - UFRN",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1581092918692-8d1d08905f23?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1581092162562-40038e57e0b5?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["3", "16", "11", "17", "18", "19"],
+    autoresIds: ["1", "16", "17", "18", "19"],
     categoria: "Colóquio",
-    formularioUrl: "",
-    formularioAtivo: false
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioAtivo: true
   },
   {
     id: "6",
-    titulo: "Palestra - Adaptação da Tecnologia Anammox para Tratamento de Águas Residuárias",
-    descricao: "Palestra sobre tecnologias inovadoras de tratamento de efluentes em clima tropical.",
+    titulo: "Palestra: Saneamento em Natal",
+    descricao: "Apresentação da ARSBAN sobre infraestrutura de saneamento básico e gestão de resíduos na capital potiguar.",
     descricaoCompleta: `
-      <p>Palestra apresentando a tecnologia Anammox (anaerobic ammonia oxidation) como solução sustentável para tratamento de águas residuárias em ambientes de clima tropical.</p>
-      <p><strong>Palestrante:</strong> Filipe Gregório de Farias e Silva</p>
-      <p><strong>Organizador:</strong> Mary</p>
-      <p><strong>Horário:</strong> 17:00</p>
-      <p>Conheça como essa tecnologia revolucionária pode ser aplicada em contextos tropicais, reduzindo custos operacionais e impactos ambientais no tratamento de efluentes concentrados.</p>
+      <p>Conheça os desafios e avanços do saneamento básico em Natal com especialistas da ARSBAN!</p>
+      
+      <h3>Instituição:</h3>
+      <p><strong>ARSBAN</strong> - Agência Reguladora de Saneamento Básico do Município de Natal</p>
+      
+      <h3>Tópicos abordados:</h3>
+      <ul>
+        <li>Histórico e situação atual do saneamento em Natal</li>
+        <li>Abastecimento de água tratada</li>
+        <li>Esgotamento sanitário e tratamento</li>
+        <li>Gestão de resíduos sólidos urbanos</li>
+        <li>Drenagem urbana e prevenção de enchentes</li>
+        <li>Desafios e perspectivas futuras</li>
+        <li>Papel da ARSBAN na regulação e fiscalização</li>
+      </ul>
+      
+      <p>Uma oportunidade única para entender os aspectos técnicos, ambientais e sociais do saneamento básico na nossa capital!</p>
     `,
     data: "18 de novembro de 2025",
-    horario: "17:00 - 18:30",
-    local: "Auditório - UFRN",
+    horario: "15:00 - 17:00",
+    local: "Escola de Ciência e Tecnologia - UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1581092918692-8d1d08905f23?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1581093458791-9d42e2c8a6b1?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["4"],
+    autoresIds: ["21"],
     categoria: "Palestra",
-    formularioUrl: "",
-    formularioAtivo: false
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioAtivo: true
   },
   {
     id: "7",
-    titulo: "Palestra - Saneamento em Natal",
-    descricao: "Palestra sobre saneamento e gestão de resíduos na cidade de Natal.",
+    titulo: "Minicurso: Conexão QGIS e Brasil Mais (Dia 2)",
+    descricao: "Continuação do minicurso sobre QGIS e Brasil Mais, com prática em análise espacial e elaboração de mapas.",
     descricaoCompleta: `
-      <p>Palestra apresentando os desafios e soluções de saneamento na cidade de Natal, com foco em tratamento de efluentes e gestão de resíduos sólidos.</p>
-      <p><strong>Palestrante:</strong> Arsban</p>
-      <p><strong>Organizador:</strong> Jazi</p>
-      <p><strong>Equipe:</strong> Beatriz, Sara</p>
-      <p><strong>Horário:</strong> 19:00</p>
-      <p>Conheça as iniciativas municipais, desafios operacionais e perspectivas futuras para melhorar a infraestrutura de saneamento em Natal.</p>
+      <p>Segundo dia do minicurso de geotecnologias aplicadas ao meio ambiente!</p>
+      
+      <h3>Ministrantes:</h3>
+      <ul>
+        <li><strong>Prof. Dr. Mary Lúcia da Silva Nogueira</strong> - UFRN/LASA</li>
+        <li><strong>Júlio Danilo Soares de Santana</strong> - UFRN/LASA</li>
+        <li><strong>Gustavo</strong> - UFRN/LASA</li>
+      </ul>
+      
+      <h3>Conteúdo do Dia 2:</h3>
+      <ul>
+        <li>Revisão dos conceitos do dia 1</li>
+        <li>Análises espaciais avançadas</li>
+        <li>Geoprocessamento de dados ambientais</li>
+        <li>Criação de layouts de mapas profissionais</li>
+        <li>Exportação e compartilhamento de resultados</li>
+        <li>Projeto prático aplicado</li>
+      </ul>
+      
+      <p><strong>Requisitos:</strong> Ter participado do dia 1 do minicurso. Trazer notebook com QGIS instalado.</p>
+      
+      <p><strong>Ao final, os participantes receberão certificado de conclusão.</strong></p>
     `,
     data: "18 de novembro de 2025",
-    horario: "19:00 - 20:00",
-    local: "Sala de Conferências - UFRN",
+    horario: "15:00 - 17:00",
+    local: "Laboratório de Informática 3, 2º Andar - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1581092918692-8d1d08905f23?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["2", "21", "6", "18"],
-    categoria: "Palestra",
-    formularioUrl: "",
-    formularioAtivo: false
+    autoresIds: ["1", "14", "15"],
+    categoria: "Minicurso",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioAtivo: true
   },
   {
     id: "8",
-    titulo: "Minicurso - Conexão QGIS e Brasil Mais (Turma 2)",
-    descricao: "Segunda turma do minicurso sobre GIS e geotecnologias.",
+    titulo: "Palestra: Geotecnologias",
+    descricao: "Apresentação da Cabugi Soluções sobre aplicações práticas de geotecnologias em projetos ambientais.",
     descricaoCompleta: `
-      <p>Segunda turma do minicurso prático sobre QGIS e Brasil Mais para análise espacial e geoprocessamento.</p>
-      <p><strong>Ministrantes:</strong> Mary, Júlio, Gustavo</p>
-      <p><strong>Aluno:</strong> Thainara</p>
-      <p><strong>Horário:</strong> 15:00 - 17:00</p>
-      <p>Este minicurso apresentará técnicas de mapeamento digital e análise geoespacial com ferramentas de código aberto para pesquisa ambiental.</p>
-    `,
-    data: "18 de novembro de 2025",
-    horario: "15:00 - 17:00",
-    local: "Laboratório de Geomática - UFRN",
-    imagens: [
-      "https://images.unsplash.com/photo-1552996881-daf0e9f37341?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
-    ],
-    autoresIds: ["1", "9", "14", "15"],
-    categoria: "Minicurso",
-    formularioUrl: "",
-    formularioAtivo: false
-  },
-  {
-    id: "9",
-    titulo: "Geotecnologias e Soluções Ambientais",
-    descricao: "Palestra sobre aplicações de geotecnologias para soluções ambientais com Cabugi Soluções.",
-    descricaoCompleta: `
-      <p>Palestra apresentando as aplicações práticas de geotecnologias no desenvolvimento de soluções ambientais.</p>
-      <p><strong>Empresa:</strong> Cabugi Soluções</p>
-      <p><strong>Organizador:</strong> Mary</p>
-      <p><strong>Equipe:</strong> Thainara, Beatriz, Mesael</p>
-      <p><strong>Horário:</strong> 10:00</p>
-      <p>Conheça como ferramentas de geoprocessamento e sensoriamento remoto são aplicadas em projetos de monitoramento ambiental, planejamento urbano e desenvolvimento sustentável.</p>
+      <p>Descubra como as geotecnologias estão revolucionando a gestão ambiental e territorial!</p>
+      
+      <h3>Empresa:</h3>
+      <p><strong>Cabugi Soluções</strong> - Empresa especializada em geotecnologias e soluções ambientais</p>
+      
+      <h3>Temas:</h3>
+      <ul>
+        <li>Panorama das geotecnologias no Brasil</li>
+        <li>Sensoriamento remoto e imagens de satélite</li>
+        <li>Sistemas de Informação Geográfica (SIG)</li>
+        <li>Drones e fotogrametria aplicados ao meio ambiente</li>
+        <li>Modelagem territorial e análise espacial</li>
+        <li>Casos práticos de aplicação</li>
+        <li>Mercado de trabalho e oportunidades</li>
+      </ul>
+      
+      <p>Uma excelente oportunidade para conhecer aplicações reais e tendências da área de geotecnologias!</p>
     `,
     data: "19 de novembro de 2025",
     horario: "10:00 - 12:00",
-    local: "Auditório - UFRN",
+    local: "Auditório E - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1552996881-daf0e9f37341?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1", "9", "6", "11"],
+    autoresIds: ["1"],
     categoria: "Palestra",
-    formularioUrl: "",
-    formularioAtivo: false
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioAtivo: true
   },
   {
-    id: "10",
-    titulo: "Entre o Campo e o Escritório - Ser um Consultor Ambiental Hoje",
-    descricao: "Palestra sobre a profissão de consultor ambiental com o CRNBio.",
+    id: "9",
+    titulo: "Palestra: Entre o Campo e o Escritório",
+    descricao: "O que é ser um Consultor Ambiental Hoje - discussão sobre a carreira e atuação profissional com o CRNBIO.",
     descricaoCompleta: `
-      <p>Palestra explorar os desafios, oportunidades e rotina da profissão de consultor ambiental nos dias atuais.</p>
-      <p><strong>Instituição:</strong> CRNBio (Conselho Regional de Biologia)</p>
-      <p><strong>Organizador:</strong> Mary</p>
-      <p><strong>Equipe (Fechada):</strong> Thainara, Beatriz, Thallyana</p>
-      <p><strong>Horário:</strong> 15:00</p>
-      <p>Uma visão prática e sincera sobre a carreira de consultor ambiental, abrangendo desde projetos no campo até a elaboração de relatórios técnicos em escritório, com cases reais e perspectivas de mercado.</p>
+      <p>Entenda a rotina, desafios e oportunidades da consultoria ambiental com profissionais do mercado!</p>
+      
+      <h3>Tema:</h3>
+      <p><strong>"O que é ser um Consultor Ambiental Hoje"</strong></p>
+      
+      <h3>Instituição:</h3>
+      <p><strong>CRNBIO</strong> - Conselho Regional de Biologia</p>
+      
+      <h3>Abordagem:</h3>
+      <ul>
+        <li>Perfil e formação do consultor ambiental</li>
+        <li>Áreas de atuação: licenciamento, perícias, auditorias</li>
+        <li>Rotina entre trabalho de campo e escritório</li>
+        <li>Elaboração de estudos ambientais (EIA/RIMA, RCA, etc.)</li>
+        <li>Relacionamento com órgãos ambientais</li>
+        <li>Desafios éticos e técnicos da profissão</li>
+        <li>Mercado de trabalho e empreendedorismo</li>
+        <li>Depoimentos e experiências práticas</li>
+      </ul>
+      
+      <p><strong>Ideal para estudantes e profissionais interessados em consultoria ambiental!</strong></p>
     `,
     data: "19 de novembro de 2025",
     horario: "15:00 - 17:00",
-    local: "Auditório - UFRN",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
     imagens: [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1", "9", "6", "5"],
+    autoresIds: ["1"],
     categoria: "Palestra",
-    formularioUrl: "",
-    formularioAtivo: false
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioAtivo: true
   }
 ];
 

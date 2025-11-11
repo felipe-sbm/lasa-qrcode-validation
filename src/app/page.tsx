@@ -14,13 +14,13 @@ export default function Home() {
             <div className="space-y-6">
               <div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#018768] mb-4">
-                  Semana de Ciência e Tecnologia 2025
+                  Trilha do Conhecimento do LASA
                 </h1>
-                <p className="text-lg sm:text-xl text-[#018768] mb-2">Laboratório de Soluções Ambientais • UFRN</p>
+                <p className="text-lg sm:text-xl text-[#018768] mb-2">VIII Semana de Ciência e Tecnologia • UFRN</p>
               </div>
 
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                Bem-vindo à <strong>Semana de Ciência e Tecnologia</strong> organizada pela LASA! 
+                Bem-vindo à <strong>Trilha do Conhecimento do LASA</strong> na VIII Semana de Ciência e Tecnologia! 
                 {" "}Explore diversos eventos sobre temas atuais e relevantes para a ciência e tecnologia, 
                 incluindo a Década dos Oceanos, biodiversidade marinha, mudanças climáticas e muito mais.
               </p>
@@ -117,7 +117,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-[#018768] to-[#A0C556] text-white rounded-2xl p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Participe da Semana de Ciência e Tecnologia
+            Participe da Trilha do Conhecimento do LASA
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Explore nossos eventos e faça parte dessa jornada de conhecimento e descobertas

@@ -36,10 +36,10 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-lg sm:text-2xl font-extrabold text-white tracking-tight leading-tight">
-                Semana de Ciência e Tecnologia
+                Trilha do Conhecimento do LASA
               </h1>
               <p className="text-[10px] sm:text-xs text-white/90 font-medium">
-                Laboratório de Soluções Ambientais • UFRN
+                VIII Semana de CeT • UFRN
               </p>
             </div>
           </Link>
@@ -117,7 +117,7 @@ export default function Header() {
             <button
               onClick={() => setOpen(!open)}
               aria-label="Abrir menu"
-              aria-expanded={open}
+              aria-expanded={open ? "true" : "false"}
               className="md:hidden p-2 rounded-md text-white"
             >
               <span className={`block w-6 h-0.5 bg-white transition-transform ${open ? 'translate-y-1.5 rotate-45' : ''}`}></span>

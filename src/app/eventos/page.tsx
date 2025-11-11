@@ -9,10 +9,10 @@ export default function EventosPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-[#018768] mb-4">
-            Eventos da Semana
+            Eventos da Trilha do Conhecimento
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Explore os diversos eventos da Semana de Ciência e Tecnologia organizada pela LASA
+            Explore os diversos eventos da Trilha do Conhecimento do LASA na VIII Semana de CeT
           </p>
         </div>
 

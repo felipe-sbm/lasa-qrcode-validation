@@ -12,8 +12,8 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Semana de Ciência e Tecnologia - LASA",
-  description: "Semana de Ciência e Tecnologia organizada pela Liga Acadêmica de Sistemas Aquáticos (LASA) - UFRN",
+  title: "Trilha do Conhecimento do LASA - VIII Semana de CeT",
+  description: "Trilha do Conhecimento do LASA na VIII Semana de Ciência e Tecnologia da UFRN",
   viewport: 'width=device-width, initial-scale=1',
 };
 
