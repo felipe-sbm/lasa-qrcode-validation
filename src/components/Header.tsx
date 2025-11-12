@@ -128,20 +128,20 @@ export default function Header() {
       </div>
 
       {/* Mobile menu panel */}
-      <div className={`${open ? 'block' : 'hidden'} md:hidden bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-600 border-t border-cyan-400`}>
+      <div className={`${open ? 'block' : 'hidden'} md:hidden bg-gradient-to-r from-[#018768] to-[#A0C556] border-t border-[#A0C556]`}>
         <nav className="px-4 pb-4">
           <ul className="flex flex-col gap-2">
             <li>
-              <Link href="/" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive("/") && pathname === "/" ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Home</Link>
+              <Link href="/" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive("/") && pathname === "/" ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Home</Link>
             </li>
             <li>
-              <Link href="/eventos" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/eventos') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Eventos</Link>
+              <Link href="/eventos" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/eventos') ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Eventos</Link>
             </li>
             <li>
-              <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Quem Somos</Link>
+              <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Quem Somos</Link>
             </li>
             <li>
-              <Link href="/apoio" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/apoio') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>
+              <Link href="/apoio" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/apoio') ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>
             </li>
           </ul>
         </nav>
