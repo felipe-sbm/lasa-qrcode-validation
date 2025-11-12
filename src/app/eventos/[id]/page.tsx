@@ -162,12 +162,12 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                     rel="noopener noreferrer"
                     className="block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
                   >
-                    Inscreva-se Agora
+                    Marcar Presença
                   </a>
                 )}
                 {evento.formularioUrl && !evento.formularioAtivo && (
                   <div className="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-gray-300 text-gray-500 cursor-not-allowed">
-                    Inscrições em Breve
+                    Lista de Presença em Breve
                   </div>
                 )}
                 <Link

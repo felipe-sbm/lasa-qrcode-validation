@@ -55,11 +55,11 @@ export default function ImageSlideshow() {
                   />
                 </div>
                 
-                {/* Logo Semana de CeT */}
+                {/* Logo Semana de C&T */}
                 <div className="relative w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full p-3 shadow-xl">
                   <Image
                     src="/lasa.webp"
-                    alt="Logo VIII Semana de CeT"
+                    alt="Logo VIII Semana de C&T"
                     fill
                     className="object-contain p-2"
                   />

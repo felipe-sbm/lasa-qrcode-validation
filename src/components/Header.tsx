@@ -27,11 +27,10 @@ export default function Header() {
           >
             <div className="relative">
               <Image
-                src={"/lasa-white.webp"}
-                width={60}
-                height={60}
-                alt="Logo LASA - Laboratório de Soluções Ambientais"
-                className="shadow-lg"
+                src={"/lasa-plant.svg"}
+                width={25}
+                height={25}
+                alt="Planta da Logo do LASA - Laboratório de Soluções Ambientais"
               />
             </div>
             <div>
@@ -39,7 +38,7 @@ export default function Header() {
                 Trilha do Conhecimento do LASA
               </h1>
               <p className="text-[10px] sm:text-xs text-white/90 font-medium">
-                VIII Semana de CeT • UFRN
+                VIII Semana de C&T • UFRN
               </p>
             </div>
           </Link>
@@ -91,7 +90,7 @@ export default function Header() {
                       }
                     `}
                   >
-                    Participantes
+                    Quem Somos
                   </Link>
                 </li>
 
@@ -117,7 +116,7 @@ export default function Header() {
             <button
               onClick={() => setOpen(!open)}
               aria-label="Abrir menu"
-              aria-expanded={open ? "true" : "false"}
+              aria-expanded={open}
               className="md:hidden p-2 rounded-md text-white"
             >
               <span className={`block w-6 h-0.5 bg-white transition-transform ${open ? 'translate-y-1.5 rotate-45' : ''}`}></span>
@@ -139,7 +138,7 @@ export default function Header() {
               <Link href="/eventos" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/eventos') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Eventos</Link>
             </li>
             <li>
-              <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Participantes</Link>
+              <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Quem Somos</Link>
             </li>
             <li>
               <Link href="/apoio" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/apoio') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>

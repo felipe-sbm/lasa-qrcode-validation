@@ -12,7 +12,7 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Trilha do Conhecimento do LASA - VIII Semana de CeT",
+  title: "Trilha do Conhecimento do LASA - VIII Semana de C&T",
   description: "Trilha do Conhecimento do Laboratório de Soluções Ambientais (LASA) na VIII Semana de Ciência e Tecnologia da UFRN. Pesquisas de alta qualidade para a sustentabilidade da vida urbana e rural.",
 };
 

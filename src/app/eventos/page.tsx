@@ -12,7 +12,7 @@ export default function EventosPage() {
             Eventos da Trilha do Conhecimento
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Explore os diversos eventos da Trilha do Conhecimento do LASA na VIII Semana de CeT
+            Explore os diversos eventos da Trilha do Conhecimento do LASA na VIII Semana de C&T
           </p>
         </div>
 

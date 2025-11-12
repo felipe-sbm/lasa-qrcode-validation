@@ -34,8 +34,8 @@ O site foi transformado de um portal específico sobre a "Década dos Oceanos" p
 
 ### 4. **Página Individual de Evento (src/app/eventos/[id]/page.tsx)**
 - ✅ **NOVO**: Adicionado botão de inscrição via Google Forms
-  - Botão verde "Inscreva-se Agora" quando `formularioAtivo: true`
-  - Botão cinza "Inscrições em Breve" quando `formularioAtivo: false`
+  - Botão verde "Marcar Presença" quando `formularioAtivo: true`
+  - Botão cinza "Lista de presença em Breve" quando `formularioAtivo: false`
   - Link abre em nova aba quando ativo
   - Botão desabilitado quando inativo
 
@@ -87,7 +87,7 @@ Cada evento pode ter:
   - Efeito hover verde escuro
   
 - **Quando `formularioAtivo: false`**:
-  - Botão cinza com texto "Inscrições em Breve"
+  - Botão cinza com texto "Lista de Presença em Breve"
   - Não clicável (cursor not-allowed)
   - Sem link funcional
 

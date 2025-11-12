@@ -22,10 +22,13 @@ export default function Home() {
 
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                 Bem-vindo à <strong>Trilha do Conhecimento do LASA</strong> na
-                VIII Semana de Ciência e Tecnologia! Explore diversos eventos
-                sobre temas atuais e relevantes para a ciência e tecnologia,
-                incluindo a Década dos Oceanos, biodiversidade marinha, mudanças
-                climáticas e muito mais.
+                VIII Semana de Ciência e Tecnologia! Incluindo exposição
+                temática sobre cultura oceânica, perfil do profissional da
+                engenharia, agronomia e geociências, águas subterrâneas,
+                minicurso Conexão Qgis e Brasil Mais, Geotecnologias, o que é
+                Ser um Consultor Ambiental Hoje, tecnologia Anammox para o
+                tratamento de águas residuárias e Água, esgoto,resíduos sólidos
+                e drenagem urbana: como está em Natal.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -96,32 +99,31 @@ export default function Home() {
           </h2>
 
           <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto border-l-4 border-[#A0C556]">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              O <strong>Laboratório de Soluções Ambientais (LASA)</strong> é um
-              laboratório de excelência da UFRN dedicado ao estudo e propostas
-              de mitigação de impactos ambientais.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Nossa missão é{" "}
-              <strong>
-                desenvolver pesquisas de alta qualidade que contribuam para a
-                sustentabilidade da vida urbana e rural
-              </strong>
-              , utilizando tecnologias avançadas e metodologias inovadoras para
-              compreender ambientes aquáticos e propor soluções de conservação.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Através de eventos, palestras, workshops e atividades práticas,
-              conectamos estudantes, pesquisadores e a comunidade para promover
-              o conhecimento científico e a consciência ambiental.
-            </p>
+            <div>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                <strong>Laboratório de Soluções Ambientais (LASA)</strong> — criado em 2019 e reativado em 2024.
+              </p>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                Nossa missão é atuar em pesquisa, extensão, capacitação, inovação e
+                consultoria nas seguintes áreas:
+              </p>
+
+              <ul className="list-disc list-inside text-gray-700 space-y-1">
+                <li>Meio ambiente e sustentabilidade</li>
+                <li>Recursos minerais</li>
+                <li>Recursos energéticos</li>
+                <li>Recursos hídricos</li>
+              </ul>
+            </div>
           </div>
         </section>
 
         {/* Eventos Destaque */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-[#018768] text-center mb-10">
-            Eventos da Semana
+            Eventos da Trilha de conhecimento do Lasa na VIII Semana de Ciência e Tecnologia da ECT/UFRN.
+
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
