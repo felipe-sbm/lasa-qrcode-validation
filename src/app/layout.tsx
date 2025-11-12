@@ -1,15 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Figtree } from "next/font/google";
 import Header from "@/components/Header";
 import "./globals.scss";
 
-const figtree = Figtree({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  variable: "--font-figtree",
-  display: "swap",
-});
+// Note: Font loading removed to fix build issues in restricted network environments
+// The application now uses system fonts defined in globals.scss
 
 export const metadata: Metadata = {
   title: "Trilha do Conhecimento do LASA - VIII Semana de C&T",
@@ -28,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${figtree.variable} antialiased`}>
+      <body className="antialiased">
         <Header/>
         {children}
       </body>
