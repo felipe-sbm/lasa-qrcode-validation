@@ -94,7 +94,7 @@ export default function Home() {
 
         {/* Sobre O LASA Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-[#018768] text-center mb-10">
+          <h2 className="text-3xl font-bold text-[#018768] text-center mb-4">
             Sobre O LASA
           </h2>
 

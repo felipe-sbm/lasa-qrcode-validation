@@ -132,16 +132,16 @@ export default function Header() {
         <nav className="px-4 pb-4">
           <ul className="flex flex-col gap-2">
             <li>
-              <Link href="/" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive("/") && pathname === "/" ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Home</Link>
+              <Link href="/" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive("/") && pathname === "/" ? 'text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Home</Link>
             </li>
             <li>
-              <Link href="/eventos" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/eventos') ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Eventos</Link>
+              <Link href="/eventos" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/eventos') ? 'text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Eventos</Link>
             </li>
             <li>
-              <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Quem Somos</Link>
+              <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Quem Somos</Link>
             </li>
             <li>
-              <Link href="/apoio" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/apoio') ? 'bg-white text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>
+              <Link href="/apoio" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/apoio') ? 'text-[#018768]' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>
             </li>
           </ul>
         </nav>

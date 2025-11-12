@@ -54,7 +54,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["1", "2", "3"],
     categoria: "Mostra",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLScIil1wJH393AWQYTo_8fEAPUmoO_7PtEyK6COA9ZyH6kQHXA/viewform?usp=sharing&ouid=110366408967725576592",
     formularioAtivo: true
   },
   {
@@ -88,7 +88,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["20"],
     categoria: "Palestra",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLScOZ9xfnaKsLCgpHFDFOJ7sNtvunvqmnSDXfsLA3ncqU_ExRQ/viewform?usp=publish-editor",
     formularioAtivo: true
   },
   {
@@ -128,7 +128,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["1", "14", "15"],
     categoria: "Minicurso",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeglF6NDCjMUxjYYDWuB__K8XaeoRZbxZ7T1-vg9_DdtBaF9A/viewform?usp=publish-editor",
     formularioAtivo: true
   },
   {
@@ -166,7 +166,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["1", "16", "17", "18", "19"],
     categoria: "Colóquio",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfSNxrctRrzsEZjSgbHMuzMqhAz0vRr9W_EDeeS0yeZbu1oAA/viewform?usp=dialog",
     formularioAtivo: true
   },
   {
@@ -201,7 +201,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["21"],
     categoria: "Palestra",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx-16pqbLN6Nuqgm4N4YAhurLma-UEKbc4Pmb44fpAtxSRYw/viewform?usp=publish-editor",
     formularioAtivo: true
   },
   {
@@ -241,7 +241,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["1", "14", "15"],
     categoria: "Minicurso",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSenrFQnk_uJhV8Lh1ApJqsZz865EsxO5qOvtDVsRv1dmg3r3g/viewform?usp=publish-editor",
     formularioAtivo: true
   },
   {
@@ -286,7 +286,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["4"],
     categoria: "Palestra",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdC58U6a-MFthOfS0xssy0JgdaVEMuMjCPQWIlBDlJU8woJ5g/viewform?usp=publish-editor",
     formularioAtivo: true
   },
   {
@@ -325,7 +325,7 @@ export const eventos: Evento[] = [
     ],
     autoresIds: ["1"],
     categoria: "Palestra",
-    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdD24sv-NALhPCmE6u3zoGz_ihOrMsgjjSunMwpObi1kJi2FA/viewform",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdK2S_CgIXo6OtNtwCqDAljFzyOgXbJvIX9fENagjI0cQjMXQ/viewform?usp=publish-editor",
     formularioAtivo: true
   }
 ];
