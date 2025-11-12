@@ -48,7 +48,7 @@ export default function ImageSlideshow() {
                 {/* Logo ECT */}
                 <div className="relative w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full p-3 shadow-xl">
                   <Image
-                    src="/lasa.png"
+                    src="/lasa.webp"
                     alt="Logo ECT"
                     fill
                     className="object-contain p-2"
@@ -58,7 +58,7 @@ export default function ImageSlideshow() {
                 {/* Logo Semana de CeT */}
                 <div className="relative w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-full p-3 shadow-xl">
                   <Image
-                    src="/lasa.png"
+                    src="/lasa.webp"
                     alt="Logo VIII Semana de CeT"
                     fill
                     className="object-contain p-2"

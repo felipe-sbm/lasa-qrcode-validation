@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
 import Header from "@/components/Header";
 import "./globals.scss";
@@ -14,7 +14,11 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "Trilha do Conhecimento do LASA - VIII Semana de CeT",
   description: "Trilha do Conhecimento do Laboratório de Soluções Ambientais (LASA) na VIII Semana de Ciência e Tecnologia da UFRN. Pesquisas de alta qualidade para a sustentabilidade da vida urbana e rural.",
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({

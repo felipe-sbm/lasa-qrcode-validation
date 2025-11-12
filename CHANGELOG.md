@@ -9,10 +9,10 @@ O site foi transformado de um portal específico sobre a "Década dos Oceanos" p
 ## Alterações Detalhadas
 
 ### 1. **Header (src/components/Header.tsx)**
-- ✅ Logo alterado de `/logo.webp` para `/lasa.png`
+- ✅ Logo alterado de `/logo.webp` para `/lasa.webp`
 - ✅ Título alterado de "Década dos Oceanos" para "Semana de Ciência e Tecnologia"
 - ✅ Subtítulo alterado de "2021-2030 • UFRN" para "LASA • UFRN"
-- ✅ Removido link de navegação "Referências" (conforme solicitação de remoção de patrocinadores)
+- ✅ Removido link de navegação "Referências" (conforme solicitação de remoção de apoio)
 
 ### 2. **Página Inicial (src/app/page.tsx)**
 - ✅ Hero Section:
@@ -130,7 +130,7 @@ Cada evento pode ter:
 
 ## Logo LASA
 
-O logo `lasa.png` está localizado em `/public/lasa.png` e é usado no Header do site.
+O logo `lasa.webp` está localizado em `/public/lasa.webp` e é usado no Header do site.
 
 ---
 

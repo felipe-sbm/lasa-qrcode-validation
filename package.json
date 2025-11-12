@@ -1,5 +1,5 @@
 {
-  "name": "validacao-de-visitantes-semana-de-cet",
+  "name": "trilha-de-conhecimento-lasa",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -28,7 +28,7 @@
   "description": "Site para validar visitantes através de qrcodes com formulário para a Semana de Ciências & Tecnologia da UFRN.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felipe-sbm/lasa-qrcode-validation.git"
+    "url": "git+https://github.com/felipe-sbm/trilha-de-conhecimento-lasa.git"
   },
   "keywords": [
     "science-and-technology",

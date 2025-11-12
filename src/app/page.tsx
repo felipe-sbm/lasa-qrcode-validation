@@ -15,35 +15,75 @@ export default function Home() {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#018768] mb-4">
                   Trilha do Conhecimento do LASA
                 </h1>
-                <p className="text-lg sm:text-xl text-[#018768] mb-2">VIII Semana de Ciência e Tecnologia • UFRN</p>
+                <p className="text-lg sm:text-xl text-[#018768] mb-2">
+                  VIII Semana de Ciência e Tecnologia • UFRN
+                </p>
               </div>
 
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                Bem-vindo à <strong>Trilha do Conhecimento do LASA</strong> na VIII Semana de Ciência e Tecnologia! 
-                {" "}Explore diversos eventos sobre temas atuais e relevantes para a ciência e tecnologia, 
-                incluindo a Década dos Oceanos, biodiversidade marinha, mudanças climáticas e muito mais.
+                Bem-vindo à <strong>Trilha do Conhecimento do LASA</strong> na
+                VIII Semana de Ciência e Tecnologia! Explore diversos eventos
+                sobre temas atuais e relevantes para a ciência e tecnologia,
+                incluindo a Década dos Oceanos, biodiversidade marinha, mudanças
+                climáticas e muito mais.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link 
+                <Link
                   href="/eventos"
                   className="bg-[#018768] text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:bg-[#016B54] transition-colors shadow-lg"
                 >
                   Ver Eventos
                 </Link>
+                <a
+                  href="https://www.instagram.com/lasa.ufrn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-colors shadow-lg flex items-center gap-2"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                  Siga-nos no Instagram
+                </a>
               </div>
             </div>
 
-            {/* Logo LASA à direita */}
-            <div className="flex justify-center items-center">
-              <div className="relative w-full max-w-md h-64 sm:h-80 md:h-96 lg:h-[500px]">
-                <Image
-                  src="/lasa.png"
-                  alt="Logo LASA - Laboratório de Soluções Ambientais"
-                  fill
-                  className="object-contain drop-shadow-2xl"
-                  priority
-                />
+            {/* Logos à direita */}
+            <div className="flex flex-col justify-center items-center gap-8">
+              {/* Logos ECT e LASA Secondary */}
+              <div className="flex flex-col items-center justify-center gap-12">
+                <div className="relative w-48 h-48 sm:w-64 md:w-80">
+                  <Image
+                    src="/semana-cet.webp"
+                    alt="Logo da Semana de C&T - ECT, UFRN"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                    priority
+                  />
+                </div>
+                <div className="relative w-48 h-48 sm:w-64 md:w-80">
+                  <Image
+                    src="/lasa-secondary.webp"
+                    alt="Logo LASA Secondary"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                  />
+                </div>
+                <div className="relative w-48 h-48 sm:w-64 md:w-80">
+                  <Image
+                    src="/ect-logo.webp"
+                    alt="Logo ECT - Escola de Ciências e Tecnologia"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -54,20 +94,26 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-[#018768] text-center mb-10">
             Sobre O LASA
           </h2>
-          
+
           <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto border-l-4 border-[#A0C556]">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              O <strong>Laboratório de Soluções Ambientais (LASA)</strong> é um laboratório de excelência da UFRN 
-              dedicado ao estudo e propostas de mitigação de impactos ambientais.
+              O <strong>Laboratório de Soluções Ambientais (LASA)</strong> é um
+              laboratório de excelência da UFRN dedicado ao estudo e propostas
+              de mitigação de impactos ambientais.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Nossa missão é <strong>desenvolver pesquisas de alta qualidade que contribuam para a sustentabilidade 
-              da vida urbana e rural</strong>, utilizando tecnologias avançadas e metodologias inovadoras para 
+              Nossa missão é{" "}
+              <strong>
+                desenvolver pesquisas de alta qualidade que contribuam para a
+                sustentabilidade da vida urbana e rural
+              </strong>
+              , utilizando tecnologias avançadas e metodologias inovadoras para
               compreender ambientes aquáticos e propor soluções de conservação.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Através de eventos, palestras, workshops e atividades práticas, conectamos estudantes, 
-              pesquisadores e a comunidade para promover o conhecimento científico e a consciência ambiental.
+              Através de eventos, palestras, workshops e atividades práticas,
+              conectamos estudantes, pesquisadores e a comunidade para promover
+              o conhecimento científico e a consciência ambiental.
             </p>
           </div>
         </section>
@@ -77,11 +123,11 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-[#018768] text-center mb-10">
             Eventos da Semana
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {eventos.map((evento) => (
-              <Link 
-                key={evento.id} 
+              <Link
+                key={evento.id}
                 href={`/eventos/${evento.id}`}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-1"
               >
@@ -104,8 +150,12 @@ export default function Home() {
                     {evento.descricao}
                   </p>
                   <div className="text-sm text-gray-500 space-y-1">
-                    <p><strong>Data:</strong> {evento.data}</p>
-                    <p><strong>Horário:</strong> {evento.horario}</p>
+                    <p>
+                      <strong>Data:</strong> {evento.data}
+                    </p>
+                    <p>
+                      <strong>Horário:</strong> {evento.horario}
+                    </p>
                   </div>
                 </div>
               </Link>
@@ -113,7 +163,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-8">
-            <Link 
+            <Link
               href="/eventos"
               className="inline-block bg-[#018768] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#016B54] transition-colors"
             >
@@ -128,26 +178,27 @@ export default function Home() {
             Participe da Trilha do Conhecimento do LASA
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Explore nossos eventos e faça parte dessa jornada de conhecimento e descobertas
+            Explore nossos eventos e faça parte dessa jornada de conhecimento e
+            descobertas
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link 
+            <Link
               href="/eventos"
               className="bg-white text-[#018768] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
             >
               Eventos
             </Link>
-            <Link 
+            <Link
               href="/participantes"
               className="bg-[#018768] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#016B54] transition-colors border-2 border-white"
             >
               Participantes
             </Link>
-            <Link 
-              href="/patrocinadores"
+            <Link
+              href="/Apoio"
               className="bg-[#018768] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#016B54] transition-colors border-2 border-white"
             >
-              Patrocinadores
+              Apoio
             </Link>
           </div>
         </section>

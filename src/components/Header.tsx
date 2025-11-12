@@ -27,7 +27,7 @@ export default function Header() {
           >
             <div className="relative">
               <Image
-                src={"/lasa-white.png"}
+                src={"/lasa-white.webp"}
                 width={60}
                 height={60}
                 alt="Logo LASA - Laboratório de Soluções Ambientais"
@@ -97,11 +97,11 @@ export default function Header() {
 
                 <li>
                   <Link 
-                    href="/patrocinadores" 
+                    href="/apoio" 
                     className={`
                       block px-4 sm:px-6 py-2 rounded-lg font-semibold text-sm
                       transition-all duration-200 no-underline
-                      ${isActive("/patrocinadores") 
+                      ${isActive("/apoio") 
                         ? "bg-white text-[#018768] shadow-lg" 
                         : "text-white hover:bg-white/20 hover:shadow-md"
                       }
@@ -142,7 +142,7 @@ export default function Header() {
               <Link href="/participantes" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/participantes') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Participantes</Link>
             </li>
             <li>
-              <Link href="/patrocinadores" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/patrocinadores') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>
+              <Link href="/apoio" className={`block px-4 py-3 rounded-lg font-semibold text-white ${isActive('/apoio') ? 'bg-white text-blue-900' : ''}`} onClick={() => setOpen(false)}>Apoio</Link>
             </li>
           </ul>
         </nav>

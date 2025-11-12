@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { patrocinadores } from "@/data/data";
+import { Apoio } from "@/data/data";
 
-export default function PatrocinadoresPage() {
+export default function ApoioPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       <main className="container mx-auto px-4 pt-12">
@@ -17,10 +17,10 @@ export default function PatrocinadoresPage() {
           </p>
         </div>
 
-        {/* Galeria de Patrocinadores */}
+        {/* Galeria de Apoio */}
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {patrocinadores.map((patrocinador) => (
+            {apoio.map((patrocinador) => (
               <div
                 key={patrocinador.id}
                 className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 group flex flex-col"

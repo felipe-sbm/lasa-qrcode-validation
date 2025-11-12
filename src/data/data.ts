@@ -433,7 +433,7 @@ export const eventos: Evento[] = [
     horario: "15:00 - 17:00",
     local: "Escola de Ciência e Tecnologia - UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1581093458791-9d42e2c8a6b1?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
     ],
     autoresIds: ["21"],
@@ -663,12 +663,12 @@ export const referencias: Referencia[] = [
   }
 ];
 
-// Dados dos Patrocinadores
-export const patrocinadores: Patrocinador[] = [
+// Dados do Apoio
+export const apoio: Patrocinador[] = [
   {
     id: "1",
     nome: "UFRN - Universidade Federal do Rio Grande do Norte",
-    logo: "/photos/ufrn.png",
+    logo: "/photos/ufrn.webp",
     descricao: "Principal instituição de ensino superior do estado, apoiando pesquisa e extensão em soluções ambientais e sustentabilidade.",
     website: "https://ufrn.br",
     categoria: "Ouro"
@@ -676,7 +676,7 @@ export const patrocinadores: Patrocinador[] = [
   {
     id: "2",
     nome: "ECT - Escola de Ciências & Tecnologia",
-    logo: "/photos/ect-ufrn.png",
+    logo: "/photos/ect-ufrn.webp",
     descricao: "Unidade acadêmica da UFRN dedicada ao ensino e pesquisa em ciências exatas e tecnológicas.",
     website: "https://ect.ufrn.br",
     categoria: "Ouro"
@@ -700,6 +700,6 @@ export function getEventosByCategoria(categoria: string): Evento[] {
   return eventos.filter(evento => evento.categoria === categoria);
 }
 
-export function getPatrocinadoresByCategoria(categoria: string): Patrocinador[] {
-  return patrocinadores.filter(patrocinador => patrocinador.categoria === categoria);
+export function getApoioByCategoria(categoria: string): Patrocinador[] {
+  return apoio.filter(patrocinador => patrocinador.categoria === categoria);
 }
