@@ -141,18 +141,9 @@ export const eventos: Evento[] = [
       <h3>Tema Central:</h3>
       <p><strong>"Gestão e Desafios das Águas Subterrâneas para o Abastecimento no RN"</strong></p>
       
-      <h3>Programação:</h3>
-      <ul>
-        <li>Situação atual dos aquíferos do RN</li>
-        <li>Desafios na gestão de recursos hídricos subterrâneos</li>
-        <li>Tecnologias de prospecção e monitoramento</li>
-        <li>Legislação e políticas públicas</li>
-        <li>Qualidade da água subterrânea</li>
-        <li>Casos de sucesso e boas práticas</li>
-        <li>Sustentabilidade e uso racional</li>
-      </ul>
-      
       <p>O colóquio reunirá pesquisadores, gestores públicos, profissionais da área e estudantes para debater soluções e compartilhar conhecimentos sobre este recurso vital para o RN.</p>
+      
+      <p><strong>Confira a programação completa e as palestras na seção de Atividades do Colóquio abaixo.</strong></p>
       
       <p><strong>Evento com programação integral durante todo o dia.</strong></p>
     `,
@@ -167,7 +158,182 @@ export const eventos: Evento[] = [
     autoresIds: ["1", "16", "17", "18", "19"],
     categoria: "Colóquio",
     formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfSNxrctRrzsEZjSgbHMuzMqhAz0vRr9W_EDeeS0yeZbu1oAA/viewform?usp=dialog",
-    formularioAtivo: true
+    formularioAtivo: true,
+    subEventos: ["5.1", "5.2", "5.3", "5.4", "5.5", "5.6"]
+  },
+  // Sub-eventos do Colóquio
+  {
+    id: "5.1",
+    titulo: "Apresentação da Rede de Monitoramento Hidrogeológico do Serviço Geológico do Brasil: RIMAS/SGB",
+    descricao: "Palestra sobre a rede de monitoramento de águas subterrâneas do Serviço Geológico do Brasil.",
+    descricaoCompleta: `
+      <p>Conheça o sistema de monitoramento hidrogeológico desenvolvido pelo Serviço Geológico do Brasil.</p>
+      
+      <h3>Temas abordados:</h3>
+      <ul>
+        <li>Estrutura e funcionamento da RIMAS/SGB</li>
+        <li>Tecnologias de monitoramento em tempo real</li>
+        <li>Dados coletados e sua importância</li>
+        <li>Aplicações práticas para gestão de recursos hídricos</li>
+        <li>Acesso aos dados e plataformas digitais</li>
+      </ul>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "08:30 - 09:30",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["16"],
+    categoria: "Palestra do Colóquio",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfSNxrctRrzsEZjSgbHMuzMqhAz0vRr9W_EDeeS0yeZbu1oAA/viewform?usp=dialog",
+    formularioAtivo: true,
+    eventosPaiId: "5"
+  },
+  {
+    id: "5.2",
+    titulo: "A contaminação do aquífero Dunas-Barreiras por derivados de petróleo",
+    descricao: "Análise da ameaça à principal fonte de abastecimento da cidade de Natal/RN.",
+    descricaoCompleta: `
+      <p>Uma análise crítica sobre a contaminação do principal aquífero de Natal.</p>
+      
+      <h3>Conteúdo:</h3>
+      <ul>
+        <li>Características do aquífero Dunas-Barreiras</li>
+        <li>Fontes de contaminação por derivados de petróleo</li>
+        <li>Impactos na qualidade da água</li>
+        <li>Riscos para o abastecimento público</li>
+        <li>Medidas de prevenção e remediação</li>
+        <li>Monitoramento e fiscalização</li>
+      </ul>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "09:30 - 10:30",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["17"],
+    categoria: "Palestra do Colóquio",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfuhTrgDK96hj9StDZ3HUfo7SELPqC3IG4NVzsIcbfPumobBA/viewform?usp=publish-editor",
+    formularioAtivo: true,
+    eventosPaiId: "5"
+  },
+  {
+    id: "5.3",
+    titulo: "Aspectos legais, técnicos e regulatórios da exploração de águas minerais no RN",
+    descricao: "Discussão sobre a legislação e regulamentação da exploração de águas minerais no estado.",
+    descricaoCompleta: `
+      <p>Entenda o marco legal e regulatório da exploração de águas minerais no Rio Grande do Norte.</p>
+      
+      <h3>Abordagem:</h3>
+      <ul>
+        <li>Legislação federal e estadual sobre águas minerais</li>
+        <li>Processo de outorga e licenciamento</li>
+        <li>Aspectos técnicos da exploração</li>
+        <li>Fiscalização e controle de qualidade</li>
+        <li>Direitos minerários e concessões</li>
+        <li>Sustentabilidade na exploração</li>
+      </ul>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "11:00 - 12:00",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["18"],
+    categoria: "Palestra do Colóquio",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc_5Jnf1k4aDNvdyyb8bDuOP0T9hSHCHisgJ0EXA7w1Tf4MkA/viewform?usp=publish-editor",
+    formularioAtivo: true,
+    eventosPaiId: "5"
+  },
+  {
+    id: "5.4",
+    titulo: "A importância dos mananciais subterrâneos como fonte de abastecimento para os sistemas operados pela CAERN",
+    descricao: "Palestra sobre o papel das águas subterrâneas no abastecimento público do RN.",
+    descricaoCompleta: `
+      <p>Descubra como as águas subterrâneas são fundamentais para o abastecimento público no RN.</p>
+      
+      <h3>Tópicos:</h3>
+      <ul>
+        <li>Sistemas de abastecimento da CAERN</li>
+        <li>Dependência de águas subterrâneas</li>
+        <li>Captação e tratamento</li>
+        <li>Desafios operacionais</li>
+        <li>Investimentos e expansão</li>
+        <li>Perspectivas futuras</li>
+      </ul>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "14:00 - 15:00",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["19"],
+    categoria: "Palestra do Colóquio",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLScjxU9RELidXCUsuYXrisBti-LRoAZwaHMJ05dbQYR2Svu4eQ/viewform?usp=publish-editor",
+    formularioAtivo: true,
+    eventosPaiId: "5"
+  },
+  {
+    id: "5.5",
+    titulo: "O papel das águas subterrâneas na segurança hídrica e a sua gestão sustentável",
+    descricao: "Discussão sobre gestão sustentável e segurança hídrica a partir das águas subterrâneas.",
+    descricaoCompleta: `
+      <p>Uma reflexão sobre a importância estratégica das águas subterrâneas para a segurança hídrica.</p>
+      
+      <h3>Discussão:</h3>
+      <ul>
+        <li>Conceito de segurança hídrica</li>
+        <li>Águas subterrâneas como reserva estratégica</li>
+        <li>Gestão integrada de recursos hídricos</li>
+        <li>Mudanças climáticas e impactos</li>
+        <li>Sustentabilidade no uso</li>
+        <li>Governança e participação social</li>
+      </ul>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "15:00 - 16:00",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["1"],
+    categoria: "Palestra do Colóquio",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfky65GWl5DLgFTTGViYzyqM3y20cUOpIsKyKl1A2oZyD7a2Q/viewform?usp=publish-editor",
+    formularioAtivo: true,
+    eventosPaiId: "5"
+  },
+  {
+    id: "5.6",
+    titulo: "Adaptação da tecnologia Anammox para o tratamento de águas residuárias concentradas em clima tropical",
+    descricao: "Palestra sobre tecnologias inovadoras de tratamento de efluentes.",
+    descricaoCompleta: `
+      <p>Conheça a tecnologia Anammox e sua aplicação em clima tropical.</p>
+      
+      <h3>Conteúdo:</h3>
+      <ul>
+        <li>Fundamentos da tecnologia Anammox</li>
+        <li>Vantagens para tratamento de efluentes</li>
+        <li>Adaptação para clima tropical</li>
+        <li>Casos de aplicação</li>
+        <li>Desafios e perspectivas</li>
+        <li>Sustentabilidade e eficiência energética</li>
+      </ul>
+    `,
+    data: "18 de novembro de 2025",
+    horario: "16:00 - 17:00",
+    local: "Sala 1, 1º Andar - ECT/UFRN",
+    imagens: [
+      "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
+    ],
+    autoresIds: ["1"],
+    categoria: "Palestra do Colóquio",
+    formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfopeoEcuvzhMnfijTvRwbh7erx2kS2SYICOQvJZ0NhyjTn7Q/viewform?usp=publish-editor",
+    formularioAtivo: true,
+    eventosPaiId: "5"
   },
   {
     id: "6",

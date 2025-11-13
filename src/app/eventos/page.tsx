@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { eventos } from "@/data/data";
+import { getEventosPrincipais } from "@/data/data";
 
 export default function EventosPage() {
+  const eventosPrincipais = getEventosPrincipais();
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       <main className="container mx-auto px-4 py-12">
@@ -18,7 +20,7 @@ export default function EventosPage() {
 
         {/* Lista de Eventos */}
         <div className="space-y-8 max-w-6xl mx-auto">
-          {eventos.map((evento) => (
+          {eventosPrincipais.map((evento) => (
             <Link
               key={evento.id}
               href={`/eventos/${evento.id}`}

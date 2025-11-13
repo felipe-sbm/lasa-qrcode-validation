@@ -22,6 +22,8 @@ export interface Evento {
   categoria: string;
   formularioUrl?: string;
   formularioAtivo?: boolean;
+  eventosPaiId?: string; // ID do evento pai (para sub-eventos)
+  subEventos?: string[]; // IDs dos sub-eventos
 }
 
 export interface Referencia {

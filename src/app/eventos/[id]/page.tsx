@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getEventoById, getParticipantesByIds } from "@/data/data";
+import { getEventoById, getParticipantesByIds, getSubEventos } from "@/data/data";
 
 export default async function EventoPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -12,6 +12,7 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
   }
 
   const autores = getParticipantesByIds(evento.autoresIds);
+  const subEventos = getSubEventos(id);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
@@ -86,6 +87,65 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                 dangerouslySetInnerHTML={{ __html: evento.descricaoCompleta }}
               />
             </div>
+
+            {/* Sub-eventos / Atividades do Colóquio */}
+            {subEventos.length > 0 && (
+              <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border-l-4 border-[#018768]">
+                <h2 className="text-3xl font-bold text-[#018768] mb-6">
+                  Atividades do Colóquio
+                </h2>
+                <p className="text-gray-600 mb-8">
+                  Confira a programação completa das palestras que compõem o colóquio:
+                </p>
+                
+                <div className="space-y-6">
+                  {subEventos.map((subEvento, index) => (
+                    <div 
+                      key={subEvento.id}
+                      className="bg-gradient-to-r from-green-50 to-white rounded-xl p-6 border-l-4 border-[#A0C556] hover:shadow-md transition-shadow"
+                    >
+                      <div className="flex items-start justify-between mb-3">
+                        <div className="flex items-start flex-1">
+                          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#018768] text-white font-bold text-sm mr-4 flex-shrink-0">
+                            {index + 1}
+                          </span>
+                          <div className="flex-1">
+                            <h3 className="text-xl font-bold text-[#018768] mb-2">
+                              {subEvento.titulo}
+                            </h3>
+                            <p className="text-gray-700 mb-3">
+                              {subEvento.descricao}
+                            </p>
+                            <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+                              <div className="flex items-center">
+                                <span className="font-semibold text-[#018768] mr-1">🕒</span>
+                                {subEvento.horario}
+                              </div>
+                              <div className="flex items-center">
+                                <span className="font-semibold text-[#018768] mr-1">📍</span>
+                                {subEvento.local}
+                              </div>
+                            </div>
+                            {subEvento.formularioUrl && subEvento.formularioAtivo && (
+                              <div className="mt-4">
+                                <a
+                                  href={subEvento.formularioUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-block text-sm px-4 py-2 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
+                                >
+                                  Registrar Presença
+                                </a>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Galeria de Imagens */}
             {evento.imagens.length > 1 && (
@@ -162,7 +222,7 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                     rel="noopener noreferrer"
                     className="block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
                   >
-                    Marcar Presença
+                    Registrar Presença
                   </a>
                 )}
                 {evento.formularioUrl && !evento.formularioAtivo && (
@@ -170,12 +230,6 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                     Lista de Presença em Breve
                   </div>
                 )}
-                <Link
-                  href="/participantes"
-                  className="block w-full text-center bg-[#A0C556] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#8FB148] transition-colors"
-                >
-                  Ver Todos os Participantes
-                </Link>
               </div>
             </div>
           </div>

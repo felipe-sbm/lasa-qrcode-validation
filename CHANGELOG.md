@@ -34,7 +34,7 @@ O site foi transformado de um portal específico sobre a "Década dos Oceanos" p
 
 ### 4. **Página Individual de Evento (src/app/eventos/[id]/page.tsx)**
 - ✅ **NOVO**: Adicionado botão de inscrição via Google Forms
-  - Botão verde "Marcar Presença" quando `formularioAtivo: true`
+  - Botão verde "Registrar Presença" quando `formularioAtivo: true`
   - Botão cinza "Lista de presença em Breve" quando `formularioAtivo: false`
   - Link abre em nova aba quando ativo
   - Botão desabilitado quando inativo

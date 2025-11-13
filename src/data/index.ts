@@ -33,3 +33,13 @@ export function getEventosByCategoria(categoria: string): Evento[] {
 export function getApoioByCategoria(categoria: string): Patrocinador[] {
   return apoio.filter(patrocinador => patrocinador.categoria === categoria);
 }
+
+export function getSubEventos(eventoId: string): Evento[] {
+  const evento = getEventoById(eventoId);
+  if (!evento || !evento.subEventos) return [];
+  return evento.subEventos.map(id => getEventoById(id)).filter(Boolean) as Evento[];
+}
+
+export function getEventosPrincipais(): Evento[] {
+  return eventos.filter(evento => !evento.eventosPaiId);
+}
