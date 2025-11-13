@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getEventoById, getParticipantesByIds, getSubEventos } from "@/data/data";
+import { getEventoById, getParticipantesByIds, getSubEventos, participantes } from "@/data/data";
+import SubEventoModal from "@/components/SubEventoModal";
 
 export default async function EventoPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -13,9 +14,22 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
 
   const autores = getParticipantesByIds(evento.autoresIds);
   const subEventos = getSubEventos(id);
+  
+  // Criar mapa de participantes para o modal
+  const participantesMap = participantes.reduce((acc, p) => {
+    acc[p.id] = p;
+    return acc;
+  }, {} as Record<string, typeof participantes[0]>);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      {/* Modal de Sub-eventos */}
+      <SubEventoModal 
+        subEventos={subEventos} 
+        eventoId={id}
+        participantesMap={participantesMap}
+      />
+      
       <main className="container mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <div className="mb-6 text-sm text-gray-600">
@@ -95,28 +109,30 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                   Atividades do Colóquio
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  Confira a programação completa das palestras que compõem o colóquio:
+                  Confira a programação completa das palestras que compõem o colóquio. Clique em cada palestra para mais detalhes:
                 </p>
                 
                 <div className="space-y-6">
                   {subEventos.map((subEvento, index) => (
-                    <div 
+                    <Link
                       key={subEvento.id}
-                      className="bg-gradient-to-r from-green-50 to-white rounded-xl p-6 border-l-4 border-[#A0C556] hover:shadow-md transition-shadow"
+                      href={`/eventos/${id}?subevento=${subEvento.id}`}
+                      scroll={false}
+                      className="block bg-gradient-to-r from-green-50 to-white rounded-xl p-6 border-l-4 border-[#A0C556] hover:shadow-lg hover:border-[#018768] transition-all cursor-pointer group"
                     >
                       <div className="flex items-start justify-between mb-3">
                         <div className="flex items-start flex-1">
-                          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#018768] text-white font-bold text-sm mr-4 flex-shrink-0">
+                          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#018768] text-white font-bold text-sm mr-4 flex-shrink-0 group-hover:scale-110 transition-transform">
                             {index + 1}
                           </span>
                           <div className="flex-1">
-                            <h3 className="text-xl font-bold text-[#018768] mb-2">
+                            <h3 className="text-xl font-bold text-[#018768] mb-2 group-hover:text-[#016B54] transition-colors">
                               {subEvento.titulo}
                             </h3>
                             <p className="text-gray-700 mb-3">
                               {subEvento.descricao}
                             </p>
-                            <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+                            <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-3">
                               <div className="flex items-center">
                                 <span className="font-semibold text-[#018768] mr-1">🕒</span>
                                 {subEvento.horario}
@@ -126,22 +142,16 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                                 {subEvento.local}
                               </div>
                             </div>
-                            {subEvento.formularioUrl && subEvento.formularioAtivo && (
-                              <div className="mt-4">
-                                <a
-                                  href={subEvento.formularioUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-block text-sm px-4 py-2 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
-                                >
-                                  Registrar Presença
-                                </a>
-                              </div>
-                            )}
+                            <div className="flex items-center text-[#018768] font-semibold text-sm group-hover:translate-x-2 transition-transform">
+                              <span>Ver detalhes e registrar presença</span>
+                              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
