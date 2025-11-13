@@ -213,24 +213,37 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                 ))}
               </div>
 
-              {/* CTA */}
-              <div className="mt-8 pt-8 border-t border-gray-200 space-y-4">
-                {evento.formularioUrl && evento.formularioAtivo && (
-                  <a
-                    href={evento.formularioUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
-                  >
-                    Registrar Presença
-                  </a>
-                )}
-                {evento.formularioUrl && !evento.formularioAtivo && (
-                  <div className="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-gray-300 text-gray-500 cursor-not-allowed">
-                    Lista de Presença em Breve
+              {/* CTA - Não exibir botão se tiver sub-eventos */}
+              {subEventos.length === 0 && (
+                <div className="mt-8 pt-8 border-t border-gray-200 space-y-4">
+                  {evento.formularioUrl && evento.formularioAtivo && (
+                    <a
+                      href={evento.formularioUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
+                    >
+                      Registrar Presença
+                    </a>
+                  )}
+                  {evento.formularioUrl && !evento.formularioAtivo && (
+                    <div className="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-gray-300 text-gray-500 cursor-not-allowed">
+                      Lista de Presença em Breve
+                    </div>
+                  )}
+                </div>
+              )}
+              
+              {/* Mensagem para eventos com sub-eventos */}
+              {subEventos.length > 0 && (
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <div className="bg-green-50 border-l-4 border-[#018768] p-4 rounded-lg">
+                    <p className="text-sm text-gray-700">
+                      <span className="font-semibold text-[#018768]">💡 Importante:</span> Para você registrar a sua presença, acesse individualmente cada palestra do colóquio na seção <strong>Atividades do Colóquio</strong> acima.
+                    </p>
                   </div>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
