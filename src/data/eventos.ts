@@ -21,7 +21,7 @@ export const eventos: Evento[] = [
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1"],
+    autoresIds: [],
     categoria: "Cerimônia",
     formularioUrl: "",
     formularioAtivo: false
@@ -94,7 +94,7 @@ export const eventos: Evento[] = [
   {
     id: "4",
     titulo: "Minicurso: Conexão QGIS e Brasil Mais (Dia 1)",
-    descricao: "Aprenda a utilizar QGIS e a plataforma Brasil Mais para geoprocessamento e análise espacial de dados ambientais.",
+    descricao: "O minicurso “QGIS e Brasil Mais” tem como objetivo introduzir os participantes ao uso básico do software QGIS e à integração com a plataforma Brasil Mais que disponibiliza imagens de satélite de alta resolução. Serão abordados tópicos como: introdução ao QGIS, instalação do software, acesso à plataforma Brasil Mais, utilização de basemaps, instalação e uso do plugin Planet Explorer, além da produção de um mapa e layout básico. O curso é voltado a estudantes e profissionais interessados em geotecnologias e aplicações de sensoriamento remoto.",
     descricaoCompleta: `
       <p>Domine ferramentas essenciais para geotecnologias aplicadas ao meio ambiente!</p>
       
@@ -123,8 +123,8 @@ export const eventos: Evento[] = [
     horario: "15:00 - 17:00",
     local: "Laboratório de Informática 3, 2º Andar - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop"
+      "/photos/qgis.jpeg",
+      "/photos/qgis-art.jpeg"
     ],
     autoresIds: ["1", "14", "15"],
     categoria: "Minicurso",
@@ -309,7 +309,7 @@ export const eventos: Evento[] = [
   {
     id: "5.6",
     titulo: "Adaptação da tecnologia Anammox para o tratamento de águas residuárias concentradas em clima tropical",
-    descricao: "Palestra sobre tecnologias inovadoras de tratamento de efluentes.",
+    descricao: "O lançamento de efluentes ricos em nitrogênio amoniacal em corpos hídricos é um dos principais fatores de eutrofização e contaminação das águas subterrâneas. Em Natal e em outras cidades do Nordeste brasileiro, o problema é agravado pela baixa cobertura de esgotamento sanitário e pela presença recorrente de nitrato nos poços de abastecimento. Diante desse cenário, a pesquisa desenvolvida busca adaptar o processo Anammox — tecnologia biológica inovadora para remoção autotrófica de nitrogênio — às condições tropicais, sem necessidade de controle térmico artificial, comum em países de clima frio. O estudo avalia estratégias de inoculação e ajuste de parâmetros operacionais (como pH, Oxigênio dissolvido, Tempo de retenção hidráulica e concentração de amônia/nitrito) para otimizar o desempenho do processo em temperaturas ambientes de 27 – 31 °C. Os resultados indicam que é possível alcançar remoções eficientes de nitrogênio em escala laboratorial e piloto sob tais condições, contribuindo para a viabilidade da tecnologia em regiões tropicais. A aplicação prática dessa adaptação tem impacto direto na proteção das águas subterrâneas e na redução dos custos de tratamento de água para abastecimento, ao minimizar a formação de nitrato e a ocorrência de florações algais nos mananciais receptores.",
     descricaoCompleta: `
       <p>Conheça a tecnologia Anammox e sua aplicação em clima tropical.</p>
       
@@ -329,7 +329,7 @@ export const eventos: Evento[] = [
     imagens: [
       "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1"],
+    autoresIds: ["23"],
     categoria: "Palestra do Colóquio",
     formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfopeoEcuvzhMnfijTvRwbh7erx2kS2SYICOQvJZ0NhyjTn7Q/viewform?usp=publish-editor",
     formularioAtivo: true,

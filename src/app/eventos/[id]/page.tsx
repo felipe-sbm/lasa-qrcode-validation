@@ -164,11 +164,11 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
                   Galeria
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4">
-                  {evento.imagens.slice(1).map((imagem, index) => (
+                  {evento.imagens.slice(0).map((imagem, index) => (
                     <div key={index} className="relative h-64 rounded-lg overflow-hidden">
                       <Image
                         src={imagem}
-                        alt={`${evento.titulo} - Imagem ${index + 2}`}
+                        alt={`${evento.titulo} - Imagem ${index + 1}`}
                         fill
                         className="object-cover hover:scale-110 transition-transform duration-300"
                       />
@@ -183,45 +183,49 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
           <div className="lg:col-span-1">
             {/* Palestrantes/Autores */}
             <div className="bg-white rounded-2xl shadow-lg p-8 sticky top-8 border-l-4 border-[#A0C556]">
-              <h2 className="text-2xl font-bold text-[#018768] mb-6">
-                {evento.categoria === "Palestra" ? "Palestrantes" : 
-                 evento.categoria === "Workshop" ? "Facilitadores" : 
-                 "Participantes"}
-              </h2>
-              
-              <div className="space-y-6">
-                {autores.map((autor) => (
-                  <Link
-                    key={autor.id}
-                    href={`/participantes#${autor.id}`}
-                    className="block hover:bg-green-50 p-4 rounded-lg transition-colors"
-                  >
-                    <div className="flex items-start">
-                      {autor.foto && (
-                        <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
-                          <Image
-                            src={autor.foto}
-                            alt={autor.nome}
-                            fill
-                            className="object-cover"
-                          />
+              {autores.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold text-[#018768] mb-6">
+                    {evento.categoria === "Palestra" ? "Palestrantes" : 
+                     evento.categoria === "Workshop" ? "Facilitadores" : 
+                     "Participantes"}
+                  </h2>
+                  
+                  <div className="space-y-6">
+                    {autores.map((autor) => (
+                      <Link
+                        key={autor.id}
+                        href={`/participantes#${autor.id}`}
+                        className="block hover:bg-green-50 p-4 rounded-lg transition-colors"
+                      >
+                        <div className="flex items-start">
+                          {autor.foto && (
+                            <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                              <Image
+                                src={autor.foto}
+                                alt={autor.nome}
+                                fill
+                                className="object-cover"
+                              />
+                            </div>
+                          )}
+                          <div>
+                            <h3 className="font-semibold text-[#018768] mb-1">
+                              {autor.nome}
+                            </h3>
+                            <p className="text-sm text-gray-600 mb-1">
+                              {autor.cargo}
+                            </p>
+                            <p className="text-xs text-gray-500">
+                              {autor.instituicao}
+                            </p>
+                          </div>
                         </div>
-                      )}
-                      <div>
-                        <h3 className="font-semibold text-[#018768] mb-1">
-                          {autor.nome}
-                        </h3>
-                        <p className="text-sm text-gray-600 mb-1">
-                          {autor.cargo}
-                        </p>
-                        <p className="text-xs text-gray-500">
-                          {autor.instituicao}
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              )}
 
               {/* CTA - Não exibir botão se tiver sub-eventos */}
               {subEventos.length === 0 && (

@@ -252,5 +252,14 @@ export const participantes: Participante[] = [
     foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
     bio: "Especialista em infraestrutura de saneamento e gestão de resíduos em Natal.",
     email: ""
+  },
+  {
+    id: "23",
+    nome: "Felipe Gregório",
+    cargo: "Palestrante - Tecnologia Anammox",
+    instituicao: "Universidade Federal do Rio Grande do Norte",
+    foto: "/members/felipe-gregorio.webp",
+    bio: "Mestrando do PPCivan",
+    email: ""
   }
 ];
