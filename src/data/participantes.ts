@@ -102,7 +102,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "6",
-    nome: "Thalyana",
+    nome: "Francisca Thalyana de Lima Cavalcante Souza",
     cargo: "Participante - Mostra de Laboratórios",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -129,7 +129,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "9",
-    nome: "Felipe",
+    nome: "Felipe Samuel Batista Monteiro",
     cargo: "Participante - Mostra de Laboratórios",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
@@ -138,7 +138,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "10",
-    nome: "Thainara",
+    nome: "Thainara Lopes de Paiva",
     cargo: "Participante - Múltiplos Minicursos",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -147,7 +147,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "11",
-    nome: "Leticia",
+    nome: "Letícia Gabrielly de Lima Silva",
     cargo: "Participante - Mostra de Laboratórios",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
@@ -156,7 +156,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "12",
-    nome: "Mesael",
+    nome: "Mesael Pereira",
     cargo: "Participante - Múltiplos Eventos",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
@@ -201,7 +201,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "17",
-    nome: "Camila",
+    nome: "Camila Santos Estrela",
     cargo: "Participante - Colóquio de Águas Subterrâneas",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -210,7 +210,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "18",
-    nome: "Bárbara",
+    nome: "Bárbara Hellen Duarte Neves",
     cargo: "Participante - Colóquio de Águas Subterrâneas",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -219,7 +219,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "19",
-    nome: "Sara",
+    nome: "Sara Yasmin Teixeira de Jesus",
     cargo: "Participante - Múltiplos Eventos",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -228,7 +228,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "20",
-    nome: "Nelis",
+    nome: "Nelis Nelson Arruda da Cruz Junior",
     cargo: "Participante - Colóquio de Águas Subterrâneas",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -254,12 +254,12 @@ export const participantes: Participante[] = [
     email: ""
   },
   {
-    id: "23",
-    nome: "Felipe Gregório",
-    cargo: "Palestrante - Tecnologia Anammox",
-    instituicao: "Universidade Federal do Rio Grande do Norte",
-    foto: "/members/felipe-gregorio.webp",
-    bio: "Mestrando do PPCivan",
+    id: "24",
+    nome: "Anna Beatriz Alves Dantas",
+    cargo: "Participante - Mostra de Laboratórios",
+    instituicao: "LASA - UFRN",
+    foto: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+    bio: "Membro da equipe da Mostra de Laboratórios sobre Cultura Oceânica.",
     email: ""
   }
 ];

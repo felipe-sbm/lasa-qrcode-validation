@@ -16,7 +16,7 @@ export const eventos: Evento[] = [
     `,
     data: "17 de novembro de 2025",
     horario: "10:00 - 12:00",
-    local: "Escola de Ciência e Tecnologia - UFRN",
+  local: "Auditório A - ECT",
     imagens: [
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop"
@@ -46,13 +46,13 @@ export const eventos: Evento[] = [
     `,
     data: "17 de novembro de 2025",
     horario: "14:00 - 17:00",
-    local: "Sala 3 - Escola de Ciência e Tecnologia - UFRN",
+  local: "Sala de aula 3 - ECT",
     imagens: [
       "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["1", "2", "3"],
+  autoresIds: ["6", "8", "9", "10", "11", "24"],
     categoria: "Mostra",
     formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLScIil1wJH393AWQYTo_8fEAPUmoO_7PtEyK6COA9ZyH6kQHXA/viewform?usp=sharing&ouid=110366408967725576592",
     formularioAtivo: true
@@ -81,12 +81,12 @@ export const eventos: Evento[] = [
     `,
     data: "17 de novembro de 2025",
     horario: "17:00 - 19:00",
-    local: "Escola de Ciência e Tecnologia - UFRN",
+  local: "Auditório A - ECT",
     imagens: [
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["20"],
+  autoresIds: ["21"],
     categoria: "Palestra",
     formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLScOZ9xfnaKsLCgpHFDFOJ7sNtvunvqmnSDXfsLA3ncqU_ExRQ/viewform?usp=publish-editor",
     formularioAtivo: true
@@ -121,7 +121,7 @@ export const eventos: Evento[] = [
     `,
     data: "17 de novembro de 2025",
     horario: "15:00 - 17:00",
-    local: "Laboratório de Informática 3, 2º Andar - ECT/UFRN",
+  local: "Laboratório de Informática 03 - ECT",
     imagens: [
       "/photos/qgis.jpeg",
       "/photos/qgis-art.jpeg"
@@ -149,7 +149,7 @@ export const eventos: Evento[] = [
     `,
     data: "18 de novembro de 2025",
     horario: "08:00 - 17:00",
-    local: "Sala 1, 1º Andar - ECT/UFRN",
+  local: "Sala de aula 1 - ECT",
     imagens: [
       "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&h=600&fit=crop",
@@ -329,7 +329,7 @@ export const eventos: Evento[] = [
     imagens: [
       "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
     ],
-    autoresIds: ["23"],
+  autoresIds: ["5"],
     categoria: "Palestra do Colóquio",
     formularioUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfopeoEcuvzhMnfijTvRwbh7erx2kS2SYICOQvJZ0NhyjTn7Q/viewform?usp=publish-editor",
     formularioAtivo: true,
