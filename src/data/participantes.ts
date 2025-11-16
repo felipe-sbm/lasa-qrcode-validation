@@ -4,7 +4,7 @@ export const participantes: Participante[] = [
   {
     id: "1",
     nome: "Mary Nogueira",
-    cargo: "Coordenadora - Comitê Gestor",
+    cargo: "Comitê Gestor",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
     bio: "Geóloga, Doutora em Geociência e Geofísica. Coordenadora do Comitê Gestor (2024/2026) e Professora da ECT/UFRN. Coordena projetos de pesquisa e extensão no Laboratório de Soluções Ambientais (LASA).",
@@ -12,8 +12,8 @@ export const participantes: Participante[] = [
   },
   {
     id: "1b",
-    nome: "Débora Machado",
-    cargo: "Vice-coordenadora - Comitê Gestor",
+    nome: "Debora Medina",
+    cargo: "Comitê Gestor",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
     bio: "Vice-coordenadora do Comitê Gestor (2024/2026). Geóloga e professora da ECT/UFRN com atuação em hidrogeologia.",
@@ -22,7 +22,7 @@ export const participantes: Participante[] = [
   {
     id: "1c",
     nome: "Kaline Melo",
-    cargo: "Representante - Comitê Gestor",
+    cargo: "Comitê Gestor",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop",
     bio: "Representante indicada pela diretoria da ECT no Comitê Gestor (2024/2026).",
@@ -31,7 +31,7 @@ export const participantes: Participante[] = [
   {
     id: "1d",
     nome: "Paula Stein",
-    cargo: "Representante do Corpo Docente - Comitê Gestor",
+    cargo: "Comitê Gestor",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop",
     bio: "Geóloga, Doutora em Hidrogeologia. Representante do corpo Docente da ECT no Comitê Gestor (2024/2026) e Professora da ECT/UFRN.",
@@ -39,8 +39,8 @@ export const participantes: Participante[] = [
   },
   {
     id: "1e",
-    nome: "Raduam de Oliveira",
-    cargo: "Representante do Corpo Técnico-Administrativo - Comitê Gestor",
+    nome: "Raduan Bandeira",
+    cargo: "Comitê Gestor",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
     bio: "Representante do corpo Técnico-Administrativo da ECT no Comitê Gestor (2024/2026).",
@@ -48,8 +48,8 @@ export const participantes: Participante[] = [
   },
   {
     id: "2",
-    nome: "Jazielly Sá",
-    cargo: "Pesquisadora - Eng. Civil",
+    nome: "Jazielli Sá",
+    cargo: "Pesquisadora",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
     bio: "Engenheira Civil, Doutora em Tecnologia Ambiental e Recursos Hídricos. Professora da ECT/UFRN com atuação em saneamento ambiental e soluções para sustentabilidade urbana e rural.",
@@ -57,8 +57,8 @@ export const participantes: Participante[] = [
   },
   {
     id: "2b",
-    nome: "Luciana F. L. Lucena",
-    cargo: "Pesquisadora - Eng. Civil",
+    nome: "Luciana Lucena",
+    cargo: "Pesquisadora",
     instituicao: "Pesquisadora",
     foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
     bio: "Engenheira Civil, Doutora em Economia com foco em Recursos Hídricos. Especialista em gestão de recursos hídricos.",
@@ -66,8 +66,8 @@ export const participantes: Participante[] = [
   },
   {
     id: "2c",
-    nome: "Sebastião L. Oliveira",
-    cargo: "Pesquisador - Eng. Civil",
+    nome: "Sebastião Luiz",
+    cargo: "Pesquisador",
     instituicao: "Pesquisador",
     foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
     bio: "Engenheiro Civil, Doutor em Engenharia Sustentável. Especialista em soluções sustentáveis e engenharia ambiental.",
@@ -75,8 +75,8 @@ export const participantes: Participante[] = [
   },
   {
     id: "2d",
-    nome: "Vera L. Lopes de Castro",
-    cargo: "Pesquisadora - Geóloga",
+    nome: "Vera Castro",
+    cargo: "Pesquisadora",
     instituicao: "ECT - UFRN",
     foto: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
     bio: "Geóloga, Doutora em Geociências. Professora da ECT/UFRN com expertise em geologia e recursos minerais.",
@@ -111,7 +111,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "7",
-    nome: "Beatriz",
+    nome: "Beatriz Alves",
     cargo: "Participante - Múltiplos Eventos",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
@@ -120,7 +120,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "8",
-    nome: "Jessiane",
+    nome: "Jessiane Xavier",
     cargo: "Participante - Múltiplos Eventos",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
@@ -147,7 +147,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "11",
-    nome: "Letícia Gabrielly de Lima Silva",
+    nome: "Letícia Gabrielly",
     cargo: "Participante - Mostra de Laboratórios",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
@@ -165,7 +165,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "13",
-    nome: "Elisa",
+    nome: "Elisa Cunha",
     cargo: "Participante - Palestra do CREA",
     instituicao: "LASA - UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -174,7 +174,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "14",
-    nome: "Luan",
+    nome: "Luan De Souza",
     cargo: "Aluno - Minicurso QGIS",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
@@ -192,7 +192,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "16",
-    nome: "Gustavo",
+    nome: "Gustavo Costa",
     cargo: "Ministrante - Minicurso QGIS",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
@@ -201,7 +201,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "17",
-    nome: "Camila Santos Estrela",
+    nome: "Camila Estrêla",
     cargo: "Participante - Colóquio de Águas Subterrâneas",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -210,7 +210,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "18",
-    nome: "Bárbara Hellen Duarte Neves",
+    nome: "Bárbara Duarte",
     cargo: "Participante - Colóquio de Águas Subterrâneas",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -219,7 +219,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "19",
-    nome: "Sara Yasmin Teixeira de Jesus",
+    nome: "Sara Yasmin",
     cargo: "Participante - Múltiplos Eventos",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
@@ -228,7 +228,7 @@ export const participantes: Participante[] = [
   },
   {
     id: "20",
-    nome: "Nelis Nelson Arruda da Cruz Junior",
+    nome: "Nelis Júnior",
     cargo: "Participante - Colóquio de Águas Subterrâneas",
     instituicao: "UFRN",
     foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
