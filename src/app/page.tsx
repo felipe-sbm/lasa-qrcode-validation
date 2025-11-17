@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { eventos } from "@/data/data";
+import { getEventosPrincipais } from "@/data/data";
 
 export default function Home() {
   return (
@@ -127,13 +127,13 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {eventos.map((evento) => (
+            {getEventosPrincipais().map((evento) => (
               <Link
                 key={evento.id}
                 href={`/eventos/${evento.id}`}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-1"
               >
-                <div className="relative h-48">
+                <div className="relative h-[28rem]">
                   <Image
                     src={evento.imagens[0]}
                     alt={evento.titulo}

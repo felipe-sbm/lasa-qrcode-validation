@@ -21,6 +21,9 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
     return acc;
   }, {} as Record<string, typeof participantes[0]>);
 
+  // Mostrar sidebar somente se houver conteúdo (autores, sub-eventos ou formulário)
+  const shouldShowSidebar = autores.length > 0 || subEventos.length > 0 || Boolean(evento.formularioUrl);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Modal de Sub-eventos */}
@@ -158,7 +161,7 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
             )}
 
             {/* Galeria de Imagens */}
-            {evento.imagens.length > 1 && (
+            {evento.imagens && evento.imagens.length > 0 && (
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold text-[#018768] mb-6">
                   Galeria
@@ -180,86 +183,88 @@ export default async function EventoPage({ params }: { params: Promise<{ id: str
           </div>
 
           {/* Sidebar */}
-          <div className="lg:col-span-1">
-            {/* Palestrantes/Autores */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 sticky top-8 border-l-4 border-[#A0C556]">
-              {autores.length > 0 && (
-                <>
-                  <h2 className="text-2xl font-bold text-[#018768] mb-6">
-                    {evento.categoria === "Palestra" ? "Palestrantes" : 
-                     evento.categoria === "Workshop" ? "Facilitadores" : 
-                     "Participantes"}
-                  </h2>
-                  
-                  <div className="space-y-6">
-                    {autores.map((autor) => (
-                      <Link
-                        key={autor.id}
-                        href={`/participantes#${autor.id}`}
-                        className="block hover:bg-green-50 p-4 rounded-lg transition-colors"
-                      >
-                        <div className="flex items-start">
-                          {autor.foto && (
-                            <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
-                              <Image
-                                src={autor.foto}
-                                alt={autor.nome}
-                                fill
-                                className="object-cover"
-                              />
+          {shouldShowSidebar && (
+            <div className="lg:col-span-1">
+              {/* Palestrantes/Autores */}
+              <div className="bg-white rounded-2xl shadow-lg p-8 sticky top-8 border-l-4 border-[#A0C556]">
+                {autores.length > 0 && (
+                  <>
+                    <h2 className="text-2xl font-bold text-[#018768] mb-6">
+                      {evento.categoria === "Palestra" ? "Palestrantes" : 
+                       evento.categoria === "Workshop" ? "Facilitadores" : 
+                       "Participantes"}
+                    </h2>
+                    
+                    <div className="space-y-6">
+                      {autores.map((autor) => (
+                        <Link
+                          key={autor.id}
+                          href={`/participantes#${autor.id}`}
+                          className="block hover:bg-green-50 p-4 rounded-lg transition-colors"
+                        >
+                          <div className="flex items-start">
+                            {autor.foto && (
+                              <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                                <Image
+                                  src={autor.foto}
+                                  alt={autor.nome}
+                                  fill
+                                  className="object-cover"
+                                />
+                              </div>
+                            )}
+                            <div>
+                              <h3 className="font-semibold text-[#018768] mb-1">
+                                {autor.nome}
+                              </h3>
+                              <p className="text-sm text-gray-600 mb-1">
+                                {autor.cargo}
+                              </p>
+                              <p className="text-xs text-gray-500">
+                                {autor.instituicao}
+                              </p>
                             </div>
-                          )}
-                          <div>
-                            <h3 className="font-semibold text-[#018768] mb-1">
-                              {autor.nome}
-                            </h3>
-                            <p className="text-sm text-gray-600 mb-1">
-                              {autor.cargo}
-                            </p>
-                            <p className="text-xs text-gray-500">
-                              {autor.instituicao}
-                            </p>
                           </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              {/* CTA - Não exibir botão se tiver sub-eventos */}
-              {subEventos.length === 0 && (
-                <div className="mt-8 pt-8 border-t border-gray-200 space-y-4">
-                  {evento.formularioUrl && evento.formularioAtivo && (
-                    <a
-                      href={evento.formularioUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
-                    >
-                      Registrar Presença
-                    </a>
-                  )}
-                  {evento.formularioUrl && !evento.formularioAtivo && (
-                    <div className="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-gray-300 text-gray-500 cursor-not-allowed">
-                      Lista de Presença em Breve
+                        </Link>
+                      ))}
                     </div>
-                  )}
-                </div>
-              )}
-              
-              {/* Mensagem para eventos com sub-eventos */}
-              {subEventos.length > 0 && (
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  <div className="bg-green-50 border-l-4 border-[#018768] p-4 rounded-lg">
-                    <p className="text-sm text-gray-700">
-                      <span className="font-semibold text-[#018768]">💡 Importante:</span> Para você registrar a sua presença, acesse individualmente cada palestra do colóquio na seção <strong>Atividades do Colóquio</strong> acima.
-                    </p>
+                  </>
+                )}
+
+                {/* CTA - Não exibir botão se tiver sub-eventos */}
+                {subEventos.length === 0 && (
+                  <div className="mt-8 pt-8 border-t border-gray-200 space-y-4">
+                    {evento.formularioUrl && evento.formularioAtivo && (
+                      <a
+                        href={evento.formularioUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors bg-[#018768] text-white hover:bg-[#016B54]"
+                      >
+                        Registrar Presença
+                      </a>
+                    )}
+                    {evento.formularioUrl && !evento.formularioAtivo && (
+                      <div className="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-gray-300 text-gray-500 cursor-not-allowed">
+                        Lista de Presença em Breve
+                      </div>
+                    )}
                   </div>
-                </div>
-              )}
+                )}
+                
+                {/* Mensagem para eventos com sub-eventos */}
+                {subEventos.length > 0 && (
+                  <div className="mt-8 pt-8 border-t border-gray-200">
+                    <div className="bg-green-50 border-l-4 border-[#018768] p-4 rounded-lg">
+                      <p className="text-sm text-gray-700">
+                        <span className="font-semibold text-[#018768]">💡 Importante:</span> Para você registrar a sua presença, acesse individualmente cada palestra do colóquio na seção <strong>Atividades do Colóquio</strong> acima.
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Navegação */}

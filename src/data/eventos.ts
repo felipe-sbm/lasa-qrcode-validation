@@ -18,8 +18,7 @@ export const eventos: Evento[] = [
     horario: "10:00 - 12:00",
   local: "Auditório A - ECT",
     imagens: [
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop"
+      "/photos/abertura.jpeg"
     ],
     autoresIds: [],
     categoria: "Cerimônia",
@@ -48,9 +47,7 @@ export const eventos: Evento[] = [
     horario: "14:00 - 17:00",
   local: "Sala de aula 3 - ECT",
     imagens: [
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop"
+      "/photos/cultura-oceanica.jpeg"
     ],
   autoresIds: ["6", "8", "9", "10", "11", "24"],
     categoria: "Mostra",
@@ -83,8 +80,7 @@ export const eventos: Evento[] = [
     horario: "17:00 - 19:00",
   local: "Auditório A - ECT",
     imagens: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+      "/photos/engenharia.jpeg"
     ],
   autoresIds: ["21"],
     categoria: "Palestra",
@@ -123,8 +119,8 @@ export const eventos: Evento[] = [
     horario: "15:00 - 17:00",
   local: "Laboratório de Informática 03 - ECT",
     imagens: [
-      "/photos/qgis.jpeg",
-      "/photos/qgis-art.jpeg"
+      "/photos/qgis-art.jpeg",
+      "/photos/qgis.jpeg"
     ],
     autoresIds: ["1", "14", "15"],
     categoria: "Minicurso",
@@ -151,9 +147,7 @@ export const eventos: Evento[] = [
     horario: "08:00 - 17:00",
   local: "Sala de aula 1 - ECT",
     imagens: [
-      "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
+      "/photos/coloquio.jpeg"
     ],
     autoresIds: ["1", "16", "17", "18", "19"],
     categoria: "Colóquio",
@@ -402,8 +396,7 @@ export const eventos: Evento[] = [
     horario: "15:00 - 17:00",
     local: "Laboratório de Informática 3, 2º Andar - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+      "/photos/qgis.jpeg"
     ],
     autoresIds: ["1", "14", "15"],
     categoria: "Minicurso",
@@ -447,8 +440,7 @@ export const eventos: Evento[] = [
     horario: "10:00 - 12:00",
     local: "Auditório E - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+      "/photos/terra-digital.jpeg"
     ],
     autoresIds: ["4"],
     categoria: "Palestra",
@@ -486,8 +478,7 @@ export const eventos: Evento[] = [
     horario: "15:00 - 17:00",
     local: "Sala 1, 1º Andar - ECT/UFRN",
     imagens: [
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop"
+      "/photos/campo-escritorio.jpeg"
     ],
     autoresIds: ["1"],
     categoria: "Palestra",
